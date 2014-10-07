@@ -1,0 +1,107 @@
+// horizontal center
+.horizontal--center {
+  margin: 0 auto;
+}
+
+
+
+// vertical align
+.vertical-align--middle {
+  vertical-align: middle;
+}
+
+
+
+
+
+// blocks
+.block--inline {
+  display: inline-block;
+}
+
+
+
+
+
+// floats
+.float--right {
+  float: right;
+}
+.float--left {
+  float: left;
+}
+
+
+
+
+
+// widths
+.max-width--980 {
+  max-width: 980px;
+}
+.width--60 {
+  width: 60%;
+}
+.width--40 {
+  width: 40%;
+}
+
+
+
+
+// padding
+.padding--top-bottom-one-space {
+  padding: $space 0;
+}
+
+.padding--top-one-space {
+  padding-top: $space;
+}
+.padding--top-two-spaces {
+  padding-top: $space * 2;
+}
+
+.padding--bottom-one-space {
+  padding-bottom: $space;
+}
+
+.padding--left-one-space {
+  padding-left: $space;
+}
+.padding--left-two-spaces {
+  padding-left: $space * 2;
+}
+
+
+
+
+
+// margin
+.margin--top-bottom-one-space {
+  margin: $space 0;
+}
+.margin--top-bottom-two-spaces {
+  margin: $space * 2 0;
+}
+
+.margin--top-four-spaces {
+  margin: $space * 4 0;
+}
+
+
+
+
+
+// download button
+.download-button {
+  width: 200px;
+  border: solid 2px #fff;
+  padding: $space / 2;
+  @include border-radius(10px);
+}
+
+// app icon
+.appicon {
+  @include border-radius(20px);
+  @include box-shadow(0 0 18px 1px rgba(0,0,0,.3));
+}

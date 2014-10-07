@@ -1,0 +1,8 @@
+footer {
+  @include opacity(.5);
+  @include transitions;
+
+  &:hover {
+    @include opacity(1);
+  }
+}

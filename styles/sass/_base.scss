@@ -1,0 +1,100 @@
+$font: "Avenir Next", Avenir, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, sans-serif;
+$text: #fff;
+$link: #4a90e2;
+$black: #222;
+$space: 20px;
+
+
+
+
+
+// mixin for placeholder
+@mixin placeholder {
+  &.placeholder { @content; @include transition-color }
+  &:-moz-placeholder { @content; @include transition-color }
+  &::-moz-placeholder { @content; @include transition-color }
+  &:-ms-input-placeholder { @content; @include transition-color }
+  &::-webkit-input-placeholder { @content; @include transition-color }
+}
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+body {
+  font-family: $font;
+  background: url('../images/bg.jpg') no-repeat;
+  background-size: cover;
+  line-height: 1.5;
+  color: $text;
+}
+
+
+
+
+
+h1 {
+  font-size: 3.4em;
+  font-weight: 200;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 200;
+}
+
+h1 strong, strong {
+  font-weight: 400;
+}
+
+small {
+  display: block;
+}
+
+.text--bigger {
+  font-size: 1.125em;
+}
+
+
+
+
+// selection styling
+::-moz-selection {
+  background: $link;
+  color: $black;
+}
+
+// selection styling
+::selection {
+  background: $link;
+  color: $black;
+}
+
+
+
+
+
+a {
+  color: $link;
+  text-decoration: none;
+  @include transition-color;
+
+  &:hover {
+    color: mix($link, $text, 80%);
+    text-decoration: underline;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
