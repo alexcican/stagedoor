@@ -750,13 +750,13 @@ body {
 }
 
 h1 {
-  font-size: 3.4em;
+  font-size: 3em;
   font-weight: 200;
   line-height: 1.2;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 200;
 }
 
@@ -773,17 +773,17 @@ small {
 }
 
 ::-moz-selection {
-  background: #4a90e2;
+  background: #5C9FED;
   color: #222;
 }
 
 ::selection {
-  background: #4a90e2;
+  background: #5C9FED;
   color: #222;
 }
 
 a {
-  color: #4a90e2;
+  color: #5C9FED;
   text-decoration: none;
   -moz-transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
   -o-transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
@@ -791,7 +791,7 @@ a {
   transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 a:hover {
-  color: #6ea6e7;
+  color: #7cb2f0;
   text-decoration: underline;
 }
 a:focus {
@@ -943,8 +943,8 @@ a:focus {
   }
 }
 footer {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  opacity: 0.5;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
