@@ -822,6 +822,19 @@ a:focus {
   width: 3px !important;
 }
 
+.show-on-mobile {
+  display: none;
+}
+
+@media all and (max-width: 850px) {
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .show-on-mobile {
+    display: block;
+  }
+}
 .text--center {
   text-align: center;
 }
@@ -923,12 +936,25 @@ a:focus {
     max-width: 1100px;
   }
 }
-@media all and (min-width: 1400px) {
-  .max-width--980 {
-    max-width: 1200px;
+@media all and (max-height: 750px) {
+  .iphone-screenshot {
+    width: 70%;
+  }
+
+  .margin--top-four-spaces {
+    margin-top: 40px;
   }
 }
-@media all and (max-width: 1200px) {
+@media all and (max-width: 980px) {
+  .max-width--980 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .width--60 {
+    width: 50%;
+  }
+
   h1 {
     font-size: 2.5em;
   }
@@ -937,9 +963,60 @@ a:focus {
     font-size: 1.5em;
   }
 
-  .width--60 {
-    width: 50%;
-    margin-left: 10%;
+  .margin--top-four-spaces {
+    margin-top: 40px;
+  }
+}
+@media all and (max-width: 850px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+
+  .width--60,
+  .width--40 {
+    width: 100%;
+  }
+
+  section {
+    text-align: center;
+  }
+
+  .download-button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .show-on-mobile .appicon {
+    width: 2.5em;
+    height: auto;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+
+  .margin--top-four-spaces {
+    margin-top: 20px;
+  }
+
+  .padding--left-one-space {
+    padding-left: 10px;
+  }
+}
+@media all and (max-width: 375px) {
+  a {
+    color: #12539e;
+  }
+
+  h1, h2 {
+    font-weight: 400;
+  }
+
+  .iphone-screenshot {
+    width: 60%;
   }
 }
 footer {

@@ -1,29 +1,22 @@
 // DESKTOPS
 @media all and (min-width: 1200px) {
+  // expand container for more width
   .max-width--980 {
     max-width: 1100px;
   }
 }
 
-@media all and (min-width: 1400px) {
-  .max-width--980 {
-    max-width: 1200px;
+// if less height
+@media all and (max-height: 750px) {
+  // smaller screenshot
+  .iphone-screenshot {
+    width: 70%;
   }
-}
 
-
-
-
-// MOBILE
-@media all and (max-width: 320px) {
-}
-
-
-
-
-// MOBILE AND LANDSCAPE
-@media all and (max-width: 320px) and (orientation:landscape) {
-
+  // less top spacing
+  .margin--top-four-spaces {
+    margin-top: $space * 2;
+  }
 }
 
 
@@ -31,17 +24,92 @@
 
 
 // TABLET
-@media all and (max-width: 1200px) {
+@media all and (max-width: 980px) {
+  // adds spacing left/right of container
+  .max-width--980 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  // makes text container smaller
+  .width--60 {
+    width: 50%;
+  }
+
+  // text smaller
   h1 {
     font-size: 2.5em;
   }
-
   h2 {
     font-size: 1.5em;
   }
 
-  .width--60 {
-    width: 50%;
-    margin-left: 10%;
+  // less top spacing
+  .margin--top-four-spaces {
+    margin-top: $space * 2;
+  }
+}
+
+
+
+
+
+// MOBILE
+@media all and (max-width: 850px) {
+  h1 {
+    font-size: 1.8em;
+  }
+  h2 {
+    font-size: 1.1em;
+  }
+
+  // full width containers (one under other)
+  .width--60,
+  .width--40 {
+    width: 100%;
+  }
+
+  // centres text
+  section {
+    text-align: center;
+  }
+
+  // centres download button
+  .download-button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // smaller app icon
+  .show-on-mobile .appicon {
+    width: 2.5em;
+    height: auto;
+    @include border-radius(10px);
+  }
+
+  // less spacing between elements
+  .margin--top-four-spaces {
+    margin-top: $space;
+  }
+  .padding--left-one-space {
+    padding-left: $space / 2;
+  }
+}
+
+
+
+@media all and (max-width: 375px) {
+  a {
+    color: darken($link, 30%);
+  }
+
+  // thicker fonts for mobile
+  h1, h2 {
+    font-weight: 400;
+  }
+
+  // smaller width for screenshot
+  .iphone-screenshot {
+    width: 60%;
   }
 }

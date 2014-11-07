@@ -36,6 +36,20 @@
   width: 3px !important; // browser bug (0px shifts other TV shows)
 }
 
+// class that hides elements on mobile
+.show-on-mobile {
+  display: none;
+}
+
+@media all and (max-width: 850px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  .show-on-mobile {
+    display: block;
+  }
+}
+
 
 
 

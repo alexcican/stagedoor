@@ -4,8 +4,8 @@
 <head>
   <title>Stagedoor</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon-precomposed" href="./images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
   <meta name="author" content="https://plus.google.com/116801469202683881648/" />
 
   <meta property="fb:app_id" content="292523134239015" />
@@ -14,7 +14,7 @@
   <meta property="og:title" content="The must-have app for the London theatre lover" />
   <meta property="og:site_name" content="Stagedoor" />
   <meta property="og:description" content="The must-have app for the London theatre lover" />
-  <meta property="og:image" content="http://stagedoorapp.com/images/appicon.png" />
+  <meta property="og:image" content="http://stagedoorapp.com/images/apple-touch-icon@2x.png" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@stagedoortweets" />
@@ -22,22 +22,27 @@
   <meta name="twitter:url" content="http://stagedoorapp.com" />
   <meta name="twitter:title" content="Stagedoor" />
   <meta name="twitter:description" content="The must-have app for the London theatre lover" />
-  <meta name="twitter:image:src" content="http://stagedoorapp.com/images/appicon.png" />
+  <meta name="twitter:image:src" content="http://stagedoorapp.com/images/apple-touch-icon@2x.png" />
 
-  <meta name="viewport" content="width=device-width, minimal-ui" />
+  <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" type="text/css" href="styles/style.min.css" />
   <link rel="canonical" href="http://stagedoorapp.com" />
 </head>
 <body>
 
   <div class="container  max-width--980  horizontal--center  padding--top-two-spaces">
+    <section class="padding--bottom-one-space  show-on-mobile">
+      <img src="images/apple-touch-icon.png" alt="" class="appicon  block--inline  vertical-align--middle" />
+      <h2 class="block--inline  padding--left-one-space">Stagedoor</h2>
+    </section>
+
     <section class="float--left  width--40">
-      <img src="images/screenshot.png" alt="" class="padding--left-two-spaces" />
+      <img src="images/screenshot.png" alt="" class="iphone-screenshot" />
     </section>
 
     <section class="float--right  width--60  margin--top-four-spaces">
-      <header class="padding--bottom-one-space">
-        <img src="images/appicon.png" alt="" class="appicon  block--inline  vertical-align--middle" />
+      <header class="padding--bottom-one-space  hide-on-mobile">
+        <img src="images/apple-touch-icon.png" alt="" class="appicon  block--inline  vertical-align--middle" />
         <h2 class="block--inline  padding--left-one-space">Stagedoor</h2>
       </header>
 
@@ -52,7 +57,8 @@
 
 
   <!-- JS scripts -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <script src="scripts/app.min.js"></script>
+  <script type="text/javascript" src="scripts/partials/_retina.min.js"></script>
+  <!--script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script-->
+  <!--script src="scripts/app.min.js"></script-->
 </body>
 </html>
