@@ -1,0 +1,35 @@
+// mixin for columns
+@mixin rows($numPerRow, $margin) {
+  width: ((97.5% - (($numPerRow - 1) * $margin)) / $numPerRow);
+  &:nth-child(n) {
+    margin-right: $margin;
+    margin-bottom: $margin / 2;
+  }
+  &:nth-child(#{$numPerRow}n), &:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+
+
+// 3 equal columns
+.columns--3 > * {
+  @include rows(3, 5%);
+  display: inline-block;
+  vertical-align: top;
+
+  // breakpoint where 3 columns should become 2 columns
+  @media (max-width: 850px) {
+    @include rows(2, 3%);
+    &:not(:last-child) {
+      padding-bottom: $space * 3;
+    }
+  }
+
+  // breakpoint where 2 columns should become 1 column
+  @media (max-width: 380px) {
+    @include rows(1, 0);
+    padding-bottom: 3%;
+  }
+}

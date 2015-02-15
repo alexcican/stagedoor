@@ -1,6 +1,6 @@
 $font: "Avenir Next", Avenir, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, sans-serif;
 $text: #fff;
-$link: #5C9FED;
+$link: #53FACE;
 $black: #222;
 $space: 20px;
 
@@ -63,6 +63,8 @@ small {
 
 .text--bigger {
   font-size: 1.125em;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 500;
 }
 
 

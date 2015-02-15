@@ -60,7 +60,10 @@
     font-size: 1.8em;
   }
   h2 {
-    font-size: 1.1em;
+    font-size: 1.2em;
+  }
+  .text--bigger {
+    line-height: 1.4;
   }
 
   // full width containers (one under other)
@@ -88,17 +91,24 @@
   }
 
   // less spacing between elements
-  .margin--top-four-spaces {
+  .margin--top-four-spaces,
+  .margin--top-six-spaces {
     margin-top: $space;
   }
   .padding--left-one-space {
     padding-left: $space / 2;
   }
+
+  // no floats
+  .float--right,
+  .float--left {
+    float: none;
+  }
 }
 
 
 
-@media all and (max-width: 375px) {
+@media all and (max-width: 380px) {
   a {
     color: darken($link, 30%);
   }

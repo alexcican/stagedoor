@@ -71,3 +71,15 @@
     clear: both;
   }
 }
+
+
+
+// less opacity
+.opacity--50 {
+  @include opacity(.5);
+  @include transitions;
+
+  &:hover {
+    @include opacity(1);
+  }
+}
