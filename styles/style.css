@@ -774,6 +774,12 @@ small {
   font-weight: 500;
 }
 
+.text h2,
+.text p,
+.text li {
+  margin: 10px 0;
+}
+
 ::-moz-selection {
   background: #53FACE;
   color: #222;
@@ -798,6 +804,10 @@ a:hover {
 }
 a:focus {
   outline: none;
+}
+
+ul {
+  margin-left: 40px;
 }
 
 .noScroll {
@@ -882,6 +892,10 @@ a:focus {
 
 .max-width--980 {
   max-width: 980px;
+}
+
+.max-width--650 {
+  max-width: 650px;
 }
 
 .width--60 {
