@@ -963,12 +963,24 @@ ul {
 }
 
 .download-button {
+  color: #fff;
   width: 200px;
   border: solid 2px #fff;
   padding: 10px;
+  display: block;
+  text-align: center;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.download-button:hover {
+  color: #53FACE;
+  border-color: #53FACE;
+  text-decoration: none;
 }
 
 .appicon {

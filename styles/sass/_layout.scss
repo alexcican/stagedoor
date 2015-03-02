@@ -111,10 +111,20 @@
 
 // download button
 .download-button {
+  color: $text;
   width: 200px;
   border: solid 2px #fff;
   padding: $space / 2;
+  display: block;
+  text-align: center;
   @include border-radius(10px);
+  @include transitions;
+
+  &:hover {
+    color: $link;
+    border-color: $link;
+    text-decoration: none;
+  }
 }
 
 // app icon
