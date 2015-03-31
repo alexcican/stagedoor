@@ -962,6 +962,10 @@ ul {
   margin-top: 120px;
 }
 
+.iphone-screenshot {
+  max-width: 358px;
+}
+
 .download-button {
   color: #fff;
   width: 200px;
@@ -1124,6 +1128,10 @@ ul {
   .float--left {
     float: none;
   }
+
+  .follow-link-footer {
+    display: block;
+  }
 }
 @media all and (max-width: 380px) {
   a {
@@ -1136,9 +1144,5 @@ ul {
 
   .iphone-screenshot {
     width: 60%;
-  }
-
-  .follow-link-footer {
-    display: block;
   }
 }

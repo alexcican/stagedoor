@@ -108,6 +108,11 @@
   .float--left {
     float: none;
   }
+
+  // footer on two lines
+  .follow-link-footer {
+    display: block;
+  }
 }
 
 
@@ -125,9 +130,5 @@
   // smaller width for screenshot
   .iphone-screenshot {
     width: 60%;
-  }
-
-  .follow-link-footer {
-    display: block;
   }
 }
