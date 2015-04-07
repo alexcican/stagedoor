@@ -760,7 +760,11 @@ h2 {
   font-weight: 200;
 }
 
-h1 strong, strong {
+h1 strong {
+  font-weight: 200;
+}
+
+strong {
   font-weight: 400;
 }
 
