@@ -2,6 +2,7 @@ $font: "Avenir Next", Avenir, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, s
 $text: #fff;
 $link: #53FACE;
 $black: #222;
+$yellow: #ffe21f;
 $space: 20px;
 
 
@@ -68,6 +69,10 @@ small {
   font-size: 1.125em;
   -webkit-font-smoothing: antialiased;
   font-weight: 500;
+}
+
+.text--yellow {
+  color: $yellow;
 }
 
 .text h2,

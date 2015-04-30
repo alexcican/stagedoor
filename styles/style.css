@@ -778,6 +778,10 @@ small {
   font-weight: 500;
 }
 
+.text--yellow {
+  color: #ffe21f;
+}
+
 .text h2,
 .text p,
 .text li {
