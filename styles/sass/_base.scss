@@ -68,6 +68,7 @@ small {
 .text--bigger {
   font-size: 1.125em;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-weight: 500;
 }
 
