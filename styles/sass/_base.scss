@@ -70,6 +70,10 @@ small {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 500;
+
+  strong {
+    font-weight: 500;
+  }
 }
 
 .text--yellow {

@@ -778,6 +778,9 @@ small {
   -moz-osx-font-smoothing: grayscale;
   font-weight: 500;
 }
+.text--bigger strong {
+  font-weight: 500;
+}
 
 .text--yellow {
   color: #ffe21f;
@@ -1147,7 +1150,9 @@ ul {
     color: #05af82;
   }
 
-  h1, h2 {
+  h1,
+  h1 strong,
+  h2 {
     font-weight: 400;
   }
 
