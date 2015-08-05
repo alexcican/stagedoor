@@ -1,5 +1,7 @@
 # Compass configuration file.
 
+Encoding.default_external = "utf-8"
+
 # We also support plugins and frameworks, please read the docs http://docs.mixture.io/preprocessors#compass
 # Susy (susy.oddbird.net) is available in Mixture, just uncomment to require and use
 # require 'susy'

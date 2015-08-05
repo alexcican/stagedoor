@@ -76,6 +76,9 @@
 
 // less opacity
 .opacity--50 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-stroke: 0.35px;
   @include opacity(.5);
   @include transitions;
 
