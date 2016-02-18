@@ -58,23 +58,30 @@
 @media all and (max-width: 850px) {
   h1 {
     font-size: 1.8em;
+    text-align: center;
   }
   h2 {
     font-size: 1.3em;
+
+    small {
+      font-size: .6em;
+    }
+  }
+  section > div > h2 {
+    text-align: center;
   }
   .text--bigger {
     line-height: 1.4;
+  }
+
+  .container.padding--top-six-spaces {
+    padding-top: $space / 2;
   }
 
   // full width containers (one under other)
   .width--60,
   .width--40 {
     width: 100%;
-  }
-
-  // centres text
-  section {
-    text-align: center;
   }
 
   // centres download button
@@ -87,6 +94,10 @@
     display: none;
   }
 
+  .center-on-mobile {
+    text-align: center;
+  }
+
   // smaller app icon
   .show-on-mobile .appicon {
     width: 2.5em;
@@ -94,24 +105,71 @@
     @include border-radius(10px);
   }
 
+  // brings reasons closer
+  .mobile--no-bottom-margin {
+    margin-bottom: -$space;
+  }
+
+  // navigation placement
+  nav {
+    right: auto;
+    left: $space / 2;
+    top: $space * 4;
+
+    a {
+      padding: $space / 3.5;
+      margin-left: 0;
+    }
+
+    &.homepage--navigation {
+      right: 0;
+      left: 0;
+      text-align: center;
+      top: $space * 4.5;
+    }
+  }
+  // move text below navigation
+  .float--left.width--40 {
+    margin-top: $space * 4;
+  }
+
   // less spacing between elements
-  .margin--top-four-spaces,
-  .margin--top-six-spaces {
+  .margin--top-four-spaces{
     margin-top: $space;
+  }
+  .margin--top-six-spaces {
+    margin-top: $space * 3;
   }
   .padding--left-one-space {
     padding-left: $space / 2;
   }
+  .features-icons {
+    padding-bottom: $space * 3.5;
+    width: $space * 2.5;
+  }
 
   // no floats
-  .float--right,
-  .float--left {
+  div.float--right,
+  div.float--left {
     float: none;
   }
 
   // footer on two lines
   .follow-link-footer {
     display: block;
+  }
+
+  // centre button
+  .button--claim {
+    margin: 0 auto $space;
+  }
+  .button--download {
+    margin: 0 auto;
+  }
+
+  .iphone-screenshot {
+    display: block;
+    margin: 0 auto;
   }
 }
 
@@ -132,5 +190,28 @@
   // smaller width for screenshot
   .iphone-screenshot {
     width: 60%;
+    margin-left: -$space / 2;
+
+    // video positioning
+    .iphone-screenshot__inside--video {
+      width: 312px;
+      height: 552px;
+      bottom: 95px !important;
+    }
+  }
+
+  // homepage image
+  .smaller-iphone-width-on-mobile {
+    margin: 0 auto;
+
+    // photo positioning
+    .iphone-screenshot__inside {
+      bottom: 55px;
+      left: 14px;
+    }
+
+    img {
+      width: 100%;
+    }
   }
 }

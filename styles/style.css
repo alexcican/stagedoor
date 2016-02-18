@@ -743,7 +743,7 @@
 
 body {
   font-family: "Avenir Next", Avenir, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, sans-serif;
-  background: url("../images/bg.jpg") no-repeat;
+  background: url("../images/bg.png") #1c1c1c no-repeat;
   background-size: cover;
   line-height: 1.5;
   color: #fff;
@@ -758,6 +758,10 @@ h1 {
 h2 {
   font-size: 1.8em;
   font-weight: 200;
+}
+h2 small {
+  font-size: .65em;
+  line-height: 1;
 }
 
 h1 strong {
@@ -794,12 +798,12 @@ small {
 
 ::-moz-selection {
   background: #53FACE;
-  color: #222;
+  color: #fff;
 }
 
 ::selection {
   background: #53FACE;
-  color: #222;
+  color: #fff;
 }
 
 a {
@@ -863,6 +867,10 @@ ul {
   text-align: center;
 }
 
+.position--relative {
+  position: relative;
+}
+
 .cf:after {
   content: "";
   display: table;
@@ -893,8 +901,20 @@ ul {
   vertical-align: middle;
 }
 
+.vertical-align--neg-70 {
+  vertical-align: -70%;
+}
+
+.vertical-align--neg-15 {
+  vertical-align: -15%;
+}
+
 .block--inline {
   display: inline-block;
+}
+
+.block {
+  display: block;
 }
 
 .float--right {
@@ -913,8 +933,16 @@ ul {
   max-width: 650px;
 }
 
+.width--70 {
+  width: 70%;
+}
+
 .width--60 {
   width: 60%;
+}
+
+.width--50 {
+  width: 50%;
 }
 
 .width--40 {
@@ -937,12 +965,16 @@ ul {
   padding-top: 40px;
 }
 
-.padding--top-four-spaces {
-  padding-top: 280px;
+.padding--top-six-spaces {
+  padding-top: 120px;
 }
 
 .padding--bottom-one-space {
   padding-bottom: 20px;
+}
+
+.padding--bottom-four-spaces {
+  padding-bottom: 80px;
 }
 
 .padding--left-one-space {
@@ -951,6 +983,14 @@ ul {
 
 .padding--left-two-spaces {
   padding-left: 40px;
+}
+
+.padding--right-one-space {
+  padding-right: 20px;
+}
+
+.margin--bottom-four-spaces {
+  margin-bottom: 80px;
 }
 
 .margin--top-bottom-one-space {
@@ -965,6 +1005,14 @@ ul {
   margin: 80px 0;
 }
 
+.margin--top-half-space {
+  margin-top: 10px;
+}
+
+.margin--top-one-space {
+  margin-top: 20px;
+}
+
 .margin--top-two-spaces {
   margin-top: 40px;
 }
@@ -973,19 +1021,35 @@ ul {
   margin-top: 80px;
 }
 
+.margin--top-five-spaces {
+  margin-top: 100px;
+}
+
 .margin--top-six-spaces {
   margin-top: 120px;
 }
 
 .iphone-screenshot {
   max-width: 358px;
+  position: relative;
+}
+.iphone-screenshot .iphone-screenshot__inside {
+  position: absolute;
+  bottom: 90px;
+  left: 24px;
+  width: 86.5%;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+.iphone-screenshot .iphone-screenshot__inside.iphone-screenshot__inside--video {
+  bottom: -80px;
 }
 
-.download-button {
+.button {
   color: #fff;
-  width: 200px;
   border: solid 2px #fff;
-  padding: 10px;
+  padding: 13.33333px;
   display: block;
   text-align: center;
   -moz-border-radius: 10px;
@@ -996,10 +1060,16 @@ ul {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.download-button:hover {
+.button:hover {
   color: #53FACE;
   border-color: #53FACE;
   text-decoration: none;
+}
+.button.button--download {
+  width: 200px;
+}
+.button.button--claim {
+  width: 260px;
 }
 
 .appicon {
@@ -1009,6 +1079,21 @@ ul {
   -moz-box-shadow: 0 0 18px 1px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 0 18px 1px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 18px 1px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+  position: absolute;
+  right: 0;
+  top: 60px;
+}
+nav a {
+  padding: 10px;
+  margin-left: 10px;
+}
+nav .current {
+  cursor: default;
+  color: #666;
+  text-decoration: none !important;
 }
 
 .columns--3 > * {
@@ -1055,6 +1140,36 @@ ul {
   }
 }
 
+.columns--2 > * {
+  width: 43.75%;
+  display: inline-block;
+  vertical-align: top;
+}
+.columns--2 > *:nth-child(n) {
+  margin-right: 10%;
+  margin-bottom: 5%;
+}
+.columns--2 > *:nth-child(2n), .columns--2 > *:last-child {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+@media (max-width: 850px) {
+  .columns--2 > * {
+    width: 97.5%;
+  }
+  .columns--2 > *:nth-child(n) {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .columns--2 > *:nth-child(1n), .columns--2 > *:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .columns--2 > *:not(:last-child) {
+    padding-bottom: 60px;
+  }
+}
+
 @media all and (min-width: 1200px) {
   .max-width--980 {
     max-width: 1100px;
@@ -1094,23 +1209,31 @@ ul {
 @media all and (max-width: 850px) {
   h1 {
     font-size: 1.8em;
+    text-align: center;
   }
 
   h2 {
     font-size: 1.3em;
+  }
+  h2 small {
+    font-size: .6em;
+  }
+
+  section > div > h2 {
+    text-align: center;
   }
 
   .text--bigger {
     line-height: 1.4;
   }
 
+  .container.padding--top-six-spaces {
+    padding-top: 10px;
+  }
+
   .width--60,
   .width--40 {
     width: 100%;
-  }
-
-  section {
-    text-align: center;
   }
 
   .download-button {
@@ -1122,6 +1245,10 @@ ul {
     display: none;
   }
 
+  .center-on-mobile {
+    text-align: center;
+  }
+
   .show-on-mobile .appicon {
     width: 2.5em;
     height: auto;
@@ -1130,22 +1257,67 @@ ul {
     border-radius: 10px;
   }
 
-  .margin--top-four-spaces,
-  .margin--top-six-spaces {
+  .mobile--no-bottom-margin {
+    margin-bottom: -20px;
+  }
+
+  nav {
+    right: auto;
+    left: 10px;
+    top: 80px;
+  }
+  nav a {
+    padding: 5.71429px;
+    margin-left: 0;
+  }
+  nav.homepage--navigation {
+    right: 0;
+    left: 0;
+    text-align: center;
+    top: 90px;
+  }
+
+  .float--left.width--40 {
+    margin-top: 80px;
+  }
+
+  .margin--top-four-spaces {
     margin-top: 20px;
+  }
+
+  .margin--top-six-spaces {
+    margin-top: 60px;
   }
 
   .padding--left-one-space {
     padding-left: 10px;
   }
 
-  .float--right,
-  .float--left {
+  .features-icons {
+    padding-bottom: 70px;
+    width: 50px;
+  }
+
+  div.float--right,
+  div.float--left {
     float: none;
   }
 
   .follow-link-footer {
     display: block;
+  }
+
+  .button--claim {
+    margin: 0 auto 20px;
+  }
+
+  .button--download {
+    margin: 0 auto;
+  }
+
+  .iphone-screenshot {
+    display: block;
+    margin: 0 auto;
   }
 }
 @media all and (max-width: 380px) {
@@ -1161,5 +1333,22 @@ ul {
 
   .iphone-screenshot {
     width: 60%;
+    margin-left: -10px;
+  }
+  .iphone-screenshot .iphone-screenshot__inside--video {
+    width: 312px;
+    height: 552px;
+    bottom: 95px !important;
+  }
+
+  .smaller-iphone-width-on-mobile {
+    margin: 0 auto;
+  }
+  .smaller-iphone-width-on-mobile .iphone-screenshot__inside {
+    bottom: 55px;
+    left: 14px;
+  }
+  .smaller-iphone-width-on-mobile img {
+    width: 100%;
   }
 }

@@ -1,5 +1,6 @@
 $font: "Avenir Next", Avenir, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, sans-serif;
 $text: #fff;
+$dark-grey: #666;
 $link: #53FACE;
 $black: #222;
 $yellow: #ffe21f;
@@ -33,7 +34,7 @@ $space: 20px;
 
 body {
   font-family: $font;
-  background: url('../images/bg.jpg') no-repeat;
+  background: url('../images/bg.png') #1c1c1c no-repeat;
   background-size: cover;
   line-height: 1.5;
   color: $text;
@@ -52,6 +53,11 @@ h1 {
 h2 {
   font-size: 1.8em;
   font-weight: 200;
+
+  small {
+    font-size: .65em;
+    line-height: 1;
+  }
 }
 
 h1 strong {
@@ -92,13 +98,13 @@ small {
 // selection styling
 ::-moz-selection {
   background: $link;
-  color: $black;
+  color: $text;
 }
 
 // selection styling
 ::selection {
   background: $link;
-  color: $black;
+  color: $text;
 }
 
 

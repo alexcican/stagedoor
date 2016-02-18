@@ -1,0 +1,16 @@
+nav {
+  position: absolute;
+  right: 0;
+  top: $space * 3;
+
+  a {
+    padding: $space / 2;
+    margin-left: $space / 2;
+  }
+
+  .current {
+    cursor: default;
+    color: $dark-grey;
+    text-decoration: none !important;
+  }
+}

@@ -33,3 +33,20 @@
     padding-bottom: 3%;
   }
 }
+
+
+
+// 2 equal columns
+.columns--2 > * {
+  @include rows(2, 10%);
+  display: inline-block;
+  vertical-align: top;
+
+  // breakpoint where 2 columns should become 1 column
+  @media (max-width: 850px) {
+    @include rows(1, 0);
+    &:not(:last-child) {
+      padding-bottom: $space * 3;
+    }
+  }
+}
