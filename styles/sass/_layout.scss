@@ -1,3 +1,28 @@
+// 50% height of containers (for venue)
+.fill-height-or-more {
+  min-height: 100%;
+  display: flex;
+  flex-direction: row;
+  > div, > a {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &:nth-child(1) {
+      background: $black;
+    }
+    &:nth-child(2) {
+      background: $light-text;
+      color: $black !important;
+    }
+  }
+}
+
+
+
+
+
 // horizontal center
 .horizontal--center {
   margin: 0 auto;
@@ -192,4 +217,18 @@
 .appicon {
   @include border-radius(20px);
   @include box-shadow(0 0 18px 1px rgba(0,0,0,.3));
+}
+
+
+
+
+// position
+.position--absolute {
+  position: absolute;
+}
+
+.position--absolute--bottom-center {
+  bottom: $space;
+  left: 0;
+  right: 0;
 }

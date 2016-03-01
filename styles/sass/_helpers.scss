@@ -72,7 +72,6 @@
 
 
 
-
 // clearfix
 .cf {
   &:after {
@@ -85,14 +84,20 @@
 
 
 // less opacity
-.opacity--50 {
+.opacity--50,
+.opacity--70 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-stroke: 0.35px;
-  @include opacity(.5);
   @include transitions;
 
   &:hover {
     @include opacity(1);
   }
+}
+.opacity--50 {
+  @include opacity(.5);
+}
+.opacity--70 {
+  @include opacity(.7);
 }

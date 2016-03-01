@@ -40,13 +40,35 @@
   h1 {
     font-size: 2.5em;
   }
-  h2 {
+  h2,
+  .text--h2 {
     font-size: 1.5em;
   }
 
   // less top spacing
   .margin--top-four-spaces {
     margin-top: $space * 2;
+  }
+
+  // move from 50/50 width to 100% for venue page
+  .fill-height-or-more {
+    flex-direction: column;
+
+    // add some padding/top bottom
+    & > a,
+    & > div {
+      padding: $space * 2 0;
+    }
+  }
+
+  // remove "back to homepage" from being absolute
+  .position--absolute--bottom-center {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    margin: $space 0;
+    padding-bottom: $space;
   }
 }
 
@@ -60,7 +82,8 @@
     font-size: 1.8em;
     text-align: center;
   }
-  h2 {
+  h2,
+  .text--h2 {
     font-size: 1.3em;
 
     small {
@@ -183,7 +206,8 @@
   // thicker fonts for mobile
   h1,
   h1 strong,
-  h2 {
+  h2,
+  .text--h2 {
     font-weight: 400;
   }
 

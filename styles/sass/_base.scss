@@ -1,9 +1,11 @@
 $font: "Avenir Next", Avenir, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, sans-serif;
 $text: #fff;
+$light-text: #ccc;
 $dark-grey: #666;
 $link: #53FACE;
 $black: #222;
 $yellow: #ffe21f;
+$red: #d34f4f;
 $space: 20px;
 
 
@@ -27,7 +29,13 @@ $space: 20px;
   margin: 0;
   padding: 0;
 }
-
+img, embed, object, video {
+  max-width: 100%;
+  border: none;
+}
+html, body {
+  height: 100%;
+}
 
 
 
@@ -50,7 +58,8 @@ h1 {
   line-height: 1.2;
 }
 
-h2 {
+h2,
+.text--h2 {
   font-size: 1.8em;
   font-weight: 200;
 
@@ -123,6 +132,16 @@ a {
 
   &:focus {
     outline: none;
+  }
+
+  &.huge-link:hover {
+    // background: mix($link, $black, 60%);
+    color: $text;
+    text-decoration: none;
+  }
+
+  &.link--red {
+    color: $red;
   }
 }
 
