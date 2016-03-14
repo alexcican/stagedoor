@@ -775,6 +775,12 @@ h2 small,
   line-height: 1;
 }
 
+h3 {
+  font-size: 1.4em;
+  font-weight: 200;
+  line-height: 1.6;
+}
+
 h1 strong {
   font-weight: 200;
 }
@@ -883,6 +889,14 @@ ul {
 }
 .text--center {
   text-align: center;
+}
+
+.text--grey {
+  color: #666;
+}
+
+.no-link-colour {
+  color: #fff;
 }
 
 .position--relative {
@@ -1266,7 +1280,8 @@ nav .current {
   }
 
   h2,
-  .text--h2 {
+  .text--h2,
+  h3 {
     font-size: 1.5em;
   }
 
@@ -1414,7 +1429,8 @@ nav .current {
   h1,
   h1 strong,
   h2,
-  .text--h2 {
+  .text--h2,
+  h3 {
     font-weight: 400;
   }
 
@@ -1441,13 +1457,15 @@ nav .current {
 }
 .input {
   font-family: "Avenir Next", Avenir, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, sans-serif;
-  color: #222;
+  color: #fff;
+  background: transparent;
   font-size: 1em;
   padding: 5px 10px;
   outline: none;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
-  border: none;
+  border: solid 1px #666;
   width: 260px;
+  margin: 5px 0;
 }
