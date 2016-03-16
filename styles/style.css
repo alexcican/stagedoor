@@ -1436,12 +1436,11 @@ nav .current {
 
   .iphone-screenshot {
     width: 60%;
-    margin-left: -10px;
   }
   .iphone-screenshot .iphone-screenshot__inside--video {
-    width: 312px;
-    height: 552px;
-    bottom: 95px !important;
+    width: 176px;
+    left: 14px;
+    bottom: -235px !important;
   }
 
   .smaller-iphone-width-on-mobile {
