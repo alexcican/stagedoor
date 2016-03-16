@@ -84,15 +84,13 @@
     text-align: center;
   }
   h2,
-  .text--h2 {
+  .text--h2,
+  h3 {
     font-size: 1.3em;
 
     small {
       font-size: .6em;
     }
-  }
-  section > div > h2 {
-    text-align: center;
   }
   .text--bigger {
     line-height: 1.4;

@@ -1312,16 +1312,14 @@ nav .current {
   }
 
   h2,
-  .text--h2 {
+  .text--h2,
+  h3 {
     font-size: 1.3em;
   }
   h2 small,
-  .text--h2 small {
+  .text--h2 small,
+  h3 small {
     font-size: .6em;
-  }
-
-  section > div > h2 {
-    text-align: center;
   }
 
   .text--bigger {
