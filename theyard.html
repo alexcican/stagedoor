@@ -111,5 +111,15 @@
       </div>
     </footer>
   </div>
+
+  <script>
+    // detect if iPhone/iPad replace iTunes link with direct App Store link
+    if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+      window.location = 'stagedoor://venue/13?_hk_cid=56eacad62ea6245c7b00b986';
+      setTimeout(function() {
+        window.location = "https://itunes.apple.com/us/app/stagedoor-london-theatre-app/id963068912?ls=1&mt=8";
+      }, 500);
+    }
+  </script>
 </body>
 </html>

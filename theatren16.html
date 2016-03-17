@@ -30,12 +30,6 @@
   <meta name="twitter:title" content="Follow Theatre N16 on Stagedoor." />
   <meta name="twitter:description" content="Stay up to date with current and upcoming shows at Theatre N16. Save and Recommend your favourite ones. Plug into theatre!" />
   <meta name="twitter:image:src" content="http://stagedoorapp.com/images/theatre/theatren16-stagedoor.png" />
-  <script type="text/javascript">
-    (function(h,l,i,n,k,s){
-      s=h.createElement(i);s.type="text/javascript";s.async=1;
-      s.src=l+n+".js";k=h.getElementsByTagName(i)[0];k.parentNode.insertBefore(s,k);
-    })(document,"//cdn.hokolinks.com/banner/v1/","script","d292125597a5abd5");
-  </script>
 </head>
 <body>
   <!-- Google Tag Manager -->
@@ -120,18 +114,12 @@
 
   <script>
     // detect if iPhone/iPad replace iTunes link with direct App Store link
-    // if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
-      // window.location = "https://stagedoor.hoko.link/theatren16";
-      // window.onload = function() {
-      //     // Deep link to your app goes here
-      //     document.getElementById("l").src = "stagedoor://venue/184?_hk_cid=56eacad62ea6245c7b00b986";
-
-      //     setTimeout(function() {
-      //         // Link to the App Store should go here -- only fires if deep link fails
-      //         window.location = "https://itunes.apple.com/us/app/my.app/id123456789?ls=1&mt=8";
-      //     }, 500);
-      // };
-    // stagedoor://venue/184?_hk_cid=56eacad62ea6245c7b00b986
+    if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+      window.location = 'stagedoor://venue/184?_hk_cid=56eacad62ea6245c7b00b986';
+      setTimeout(function() {
+        window.location = "https://itunes.apple.com/us/app/stagedoor-london-theatre-app/id963068912?ls=1&mt=8";
+      }, 500);
+    }
   </script>
 </body>
 </html>
