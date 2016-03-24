@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 // detect if iPhone/iPad replace iTunes link with direct App Store link
 if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
   window.location = 'stagedoor://venue/13?_hk_cid=56eacad62ea6245c7b00b986';

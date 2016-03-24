@@ -65,7 +65,7 @@
 
         <h1 class="padding--top-bottom-one-space">Theatre N16 is now officially on Stagedoor.</h1>
         <h2><a href="https://stagedoor.hoko.link/theatren16" class="appstore-link  no-link-colour" title="Download Stagedoor">Follow Theatre N16&rsquo;s page</a> to stay up to date with current and upcoming shows.</h2><br/>
-        <h3>Stagedoor helps you discover and stay up to date with your favourite shows, venues, and creatives.</h3>
+        <h3>View behind the scenes photos and videos, get their latest news, and always be in the know!</h3>
         <p class="text--bigger  margin--top-two-spaces">
           <a href="https://stagedoor.hoko.link/theatren16" class="appstore-link  button  button--download  no-link-colour" title="Get Stagedoor for iOS">Get Stagedoor for iOS</a><br/>
           <span class="block  center-on-mobile">Then search for <em>&ldquo;Theatre N16&rdquo;</em> and tap <span class="border--1px  border--opacity-25">Follow</span></span>
@@ -78,7 +78,7 @@
       <div class="columns--3">
         <div>
           <h2>Stay up-to-date</h2>
-          <p class="text--bigger">Follow directors, writers, cast, and venues, to always know what&rsquo;s on. Be the first to find out about any <strong>London production</strong> however big or small.</p>
+          <p class="text--bigger">Be the first to know what&rsquo;s on, when it&rsquo;s on and who&rsquo;s in it. Follow venues, cast, writers, and other theatre professionals to get notified about their upcoming shows.</p>
         </div>
         <div>
           <h2>Never miss out</h2>
@@ -92,7 +92,7 @@
     </section>
 
     <section class="margin--top-bottom-four-spaces  horizontal--center  text--center">
-      <h2>Discover all there is to know about Theatre N16.</h2>
+      <h2>Step into Theatre N16&rsquo;s Stagedoor.</h2>
       <p class="text--bigger  margin--top-one-space">
         <a href="https://stagedoor.hoko.link/theatren16" class="appstore-link  button  button--download  no-link-colour  horizontal--center" title="Download the app">Download the app</a><br/>
         <span class="block  center-on-mobile">Then search for <em>&ldquo;Theatre N16&rdquo;</em> and tap <span class="border--1px  border--opacity-25">Follow</span></span>
@@ -100,26 +100,20 @@
     </section>
 
 
-    <footer class="padding--bottom-one-space">
-      <h3>Spread the word and share this!</h3>
-      <p>Post <a href="images/theatre/theatren16-stagedoor.png" target="_blank">this image</a> on social networks and send to friends.</p>
-      <p>Or, copy this URL: <input type="text" onClick="this.select();" class="input  text--center" value="http://stagedoorapp.com/theatren16" />
-      <small class="text--grey">When pasting the URL, the above image will be attached automatically.</small>
-      </p><br/>
-      <div class="opacity--50">
-        Stagedoor is a <strong><a href="http://stagedoorapp.com" class="no-link-colour">London theatre app</a></strong>.
+    <footer class="padding--top-two-spaces  padding--bottom-one-space  horizontal--center  text--center">
+      <button id="toggle-button">Spread the word and share this!</button>
+      <div class="sharing-container  padding--top-half-space">
+        <p>Post <a href="images/theatre/theatren16-stagedoor.png" target="_blank">this image</a> on social networks and send to friends.</p>
+        <p>Or, copy this URL: <input type="text" onClick="this.select();" class="input  text--center" value="http://stagedoorapp.com/theatren16" />
+        <small class="text--grey">When pasting the URL, the above image will be attached automatically.</small>
+        </p><br/>
+        <div class="opacity--50">
+          Stagedoor is a <strong><a href="http://stagedoorapp.com" class="no-link-colour">London theatre app</a></strong>.
+        </div>
       </div>
     </footer>
   </div>
 
-  <script>
-    // detect if iPhone/iPad replace iTunes link with direct App Store link
-    if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
-      window.location = 'stagedoor://venue/184?_hk_cid=56eacad62ea6245c7b00b986';
-      setTimeout(function() {
-        window.location = "http://bit.ly/vnstgdr";
-      }, 666);
-    }
-  </script>
+  <script src="scripts/app.min.js"></script>
 </body>
 </html>

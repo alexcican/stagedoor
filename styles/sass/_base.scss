@@ -69,7 +69,8 @@ h2,
   }
 }
 
-h3 {
+h3,
+.text--h3 {
   font-size: 1.4em;
   font-weight: 200;
   line-height: 1.6;
@@ -107,6 +108,24 @@ small {
   margin: $space / 2 0;
 }
 
+
+
+// share this button
+button {
+  background: transparent;
+  font-family: $font;
+  color: $text;
+  cursor: pointer;
+  outline: none;
+  font-size: 1em;
+  border: none;
+  border-top: solid 1px rgba(255,255,255,.25);
+  border-bottom: solid 1px rgba(255,255,255,.25);
+  padding: $space / 2;
+  &:hover {
+    color: $link;
+  }
+}
 
 
 
