@@ -1187,6 +1187,13 @@ ul {
   display: none;
 }
 
+.twitter-icon,
+.facebook-icon {
+  width: 20px;
+  padding-right: 5px;
+  vertical-align: -15%;
+}
+
 nav {
   position: absolute;
   right: 0;
