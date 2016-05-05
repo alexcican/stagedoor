@@ -1164,6 +1164,19 @@ ul {
   width: 260px;
 }
 
+.button--open-in-app {
+  background: #53FACE;
+  color: #222 !important;
+  text-decoration: none !important;
+  float: right;
+  padding: 5px;
+  font-size: .875em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-top: 3px;
+}
+
 .appicon {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;

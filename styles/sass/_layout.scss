@@ -213,6 +213,22 @@
   }
 }
 
+
+
+// open in app on top of venue pages
+.button--open-in-app {
+  background: $link;
+  color: $black !important;
+  text-decoration: none !important;
+  float: right;
+  padding: $space / 4;
+  font-size: .875em;
+  @include border-radius(5px);
+  margin-top: 3px;
+}
+
+
+
 // app icon
 .appicon {
   @include border-radius(20px);
