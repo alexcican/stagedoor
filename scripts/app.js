@@ -6,9 +6,15 @@
 
 
 
+// get link from HTML
+var appstoreLink = document.getElementsByClassName("appstore-link");
+var hokoURL;
+if(appstoreLink.length >= 2)
+  hokoURL = appstoreLink[0].href = appstoreLink[1].href;
+
 // detect if iPhone/iPad replace iTunes link with direct App Store link
 if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
-  window.location = 'stagedoor://venue/13?_hk_cid=56eacad62ea6245c7b00b986';
+  window.location = hokoURL;
   setTimeout(function() {
     window.location = "http://bit.ly/vnstgdr";
   }, 666);
