@@ -191,7 +191,7 @@
 // download button
 .button {
   color: $text;
-  border: solid 2px #fff;
+  border: solid 2px $text;
   padding: $space / 1.5;
   display: block;
   text-align: center;
@@ -210,6 +210,16 @@
 
   &.button--claim {
     width: 260px;
+  }
+
+  &.camden-fringe-colour {
+    color: $pink;
+    border-color: $pink;
+
+    &:hover {
+      color: $link;
+      border-color: $link;
+    }
   }
 }
 

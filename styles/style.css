@@ -912,7 +912,8 @@ ul {
   color: #666;
 }
 
-.no-link-colour {
+.no-link-colour,
+.no-link-colour.camden-fringe-colour {
   color: #fff;
 }
 
@@ -964,6 +965,13 @@ ul {
 
 .border--opacity-25 {
   border-color: rgba(255, 255, 255, 0.25);
+}
+
+.camden-fringe-colour {
+  color: #ff00b0;
+}
+.camden-fringe-colour:hover {
+  color: #ff00b0;
 }
 
 .fill-height-or-more {
@@ -1162,6 +1170,14 @@ ul {
 }
 .button.button--claim {
   width: 260px;
+}
+.button.camden-fringe-colour {
+  color: #ff00b0;
+  border-color: #ff00b0;
+}
+.button.camden-fringe-colour:hover {
+  color: #53FACE;
+  border-color: #53FACE;
 }
 
 .button--open-in-app {
