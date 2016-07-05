@@ -6,42 +6,47 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>http://stagedoorapp.com/</loc>
-  <lastmod>2016-03-30T10:00:14+00:00</lastmod>
+  <lastmod>2016-07-05T10:00:14+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://stagedoorapp.com/partners</loc>
-  <lastmod>2016-03-30T10:00:14+00:00</lastmod>
+  <lastmod>2016-07-05T10:00:14+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://stagedoorapp.com/camdenfringe</loc>
+  <lastmod>2016-07-05T10:00:14+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://stagedoorapp.com/privacy</loc>
-  <lastmod>2016-03-30T10:00:14+00:00</lastmod>
+  <lastmod>2016-07-05T10:00:14+00:00</lastmod>
   <changefreq>monthly</changefreq>
 </url>
 <url>
   <loc>http://stagedoorapp.com/theyard</loc>
-  <lastmod>2016-03-30T10:00:14+00:00</lastmod>
+  <lastmod>2016-07-05T10:00:14+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://stagedoorapp.com/theatren16</loc>
-  <lastmod>2016-03-30T10:00:14+00:00</lastmod>
+  <lastmod>2016-07-05T10:00:14+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://stagedoorapp.com/youngvic</loc>
-  <lastmod>2016-03-30T10:00:14+00:00</lastmod>
+  <lastmod>2016-07-05T10:00:14+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://stagedoorapp.com/colabtheatre</loc>
-  <lastmod>2016-03-30T10:00:14+00:00</lastmod>
+  <lastmod>2016-07-05T10:00:14+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
 <url>
   <loc>http://stagedoorapp.com/whosaidtheatre</loc>
-  <lastmod>2016-03-30T10:00:14+00:00</lastmod>
+  <lastmod>2016-07-05T10:00:14+00:00</lastmod>
   <changefreq>weekly</changefreq>
 </url>
 </urlset>
