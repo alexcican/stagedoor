@@ -1132,6 +1132,7 @@ ul {
 .iphone-screenshot {
   max-width: 358px;
   position: relative;
+  display: block;
 }
 .iphone-screenshot .iphone-screenshot__inside {
   position: absolute;
