@@ -974,6 +974,20 @@ ul {
   color: #ff00b0;
 }
 
+.alert {
+  width: 100%;
+  display: block;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.alert--yellow {
+  text: #fff;
+  background: #dd2e44;
+}
+
 .fill-height-or-more {
   min-height: 100%;
   display: flex;

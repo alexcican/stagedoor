@@ -136,3 +136,20 @@
     color: $pink;
   }
 }
+
+
+
+// for alerts
+.alert {
+  width: 100%;
+  display: block;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  padding: $space 0;
+}
+
+.alert--yellow {
+  text: $text;
+  background: $red;
+}
