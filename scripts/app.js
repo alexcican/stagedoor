@@ -60,10 +60,13 @@ if (!notiOS) {
   }
 } else {
   // if on desktop, android, etc show message that only supports mobile iOS
-  var textContainer = document.createElement("p"),
-      text = document.createTextNode("Please open this link on your iOS device (iPhone, iPad, iPod).");
+  var page = window.location.href.match(/[^/]+$/g);;
+  if (page == "open") {
+    var textContainer = document.createElement("p"),
+        text = document.createTextNode("Please open this link on your iOS device (iPhone, iPad, iPod).");
 
-  textContainer.appendChild(text);
-  textContainer.className = "alert  alert--yellow";
-  document.getElementsByTagName('body')[0].appendChild(textContainer);
+    textContainer.appendChild(text);
+    textContainer.className = "alert  alert--yellow";
+    document.getElementsByTagName('body')[0].appendChild(textContainer);
+  }
 }
