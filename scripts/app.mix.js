@@ -6,5 +6,5 @@
 // @import "partials/_interactions.js";
 // @import "partials/_count-up.min.js";
 // @import "partials/_remove-show.js";
-//@import "partials/_homepage.js";
+@import "partials/_homepage.js";
 @import "partials/_open-in-app.js";

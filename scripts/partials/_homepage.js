@@ -14,9 +14,12 @@
 
 
 // hide show sharing link
-document.getElementById('toggle-button').addEventListener('click', function () {
-  toggle(document.querySelectorAll('.sharing-container'));
-});
+var el = document.getElementById('toggle-button');
+if (el){
+  el.addEventListener('click', function () {
+    toggle(document.querySelectorAll('.sharing-container'));
+  });
+}
 
 function toggle (elements, specifiedDisplay) {
   var element, index;
