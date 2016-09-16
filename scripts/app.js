@@ -102,8 +102,8 @@ if (!notiOS) {
   }
 } else {
   // if on desktop, android, etc show message that only supports mobile iOS
-  var page = window.location.href.match(/[^/]+$/g);;
-  if (page == "open") {
+  var page = window.location.href.match(/[^/]+\?/g);
+  if (page == "open?") {
     var textContainer = document.createElement("p"),
         text = document.createTextNode("Please open this link on your iOS device (iPhone, iPad, iPod).");
 
