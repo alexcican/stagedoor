@@ -63,6 +63,20 @@
   color: $dark-grey;
 }
 
+.text--section {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  padding: $space / 2 0;
+}
+
+
+
+.has-rectangle {
+  border: solid 1px #666;
+  padding: $space / 4 $space / 2;
+}
+
 
 
 

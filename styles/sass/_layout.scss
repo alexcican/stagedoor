@@ -143,6 +143,9 @@
 .margin--top-bottom-two-spaces {
   margin: $space * 2 0;
 }
+.margin--top-bottom-three-spaces {
+  margin: $space * 3 0;
+}
 .margin--top-bottom-four-spaces {
   margin: $space * 4 0;
 }
@@ -155,6 +158,9 @@
 }
 .margin--top-two-spaces {
   margin-top: $space * 2;
+}
+.margin--top-three-spaces {
+  margin-top: $space * 3;
 }
 .margin--top-four-spaces {
   margin-top: $space * 4;
@@ -206,7 +212,7 @@
   }
 
   &.button--download {
-    width: 200px;
+    width: 260px;
   }
 
   &.button--claim {
