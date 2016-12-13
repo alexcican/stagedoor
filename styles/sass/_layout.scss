@@ -228,6 +228,16 @@
       border-color: $link;
     }
   }
+
+  &.vault-festival-colour {
+    color: $vault-festival;
+    border-color: $vault-festival;
+
+    &:hover {
+      color: lighten($vault-festival, 15%);
+      border-color: lighten($vault-festival, 15%);
+    }
+  }
 }
 
 

@@ -81,7 +81,8 @@
 
 
 .no-link-colour,
-.no-link-colour.camden-fringe-colour {
+.no-link-colour.camden-fringe-colour,
+.no-link-colour.vault-festival-colour {
   color: $text;
 }
 
@@ -150,7 +151,13 @@
     color: $pink;
   }
 }
+.vault-festival-colour {
+  color: $vault-festival;
 
+  &:hover {
+    color: lighten($vault-festival, 15%);
+  }
+}
 
 
 // for alerts

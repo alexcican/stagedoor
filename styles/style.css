@@ -926,7 +926,8 @@ ul {
 }
 
 .no-link-colour,
-.no-link-colour.camden-fringe-colour {
+.no-link-colour.camden-fringe-colour,
+.no-link-colour.vault-festival-colour {
   color: #fff;
 }
 
@@ -985,6 +986,13 @@ ul {
 }
 .camden-fringe-colour:hover {
   color: #ff00b0;
+}
+
+.vault-festival-colour {
+  color: #ef24f9;
+}
+.vault-festival-colour:hover {
+  color: #f46efb;
 }
 
 .alert {
@@ -1214,6 +1222,14 @@ ul {
 .button.camden-fringe-colour:hover {
   color: #53FACE;
   border-color: #53FACE;
+}
+.button.vault-festival-colour {
+  color: #ef24f9;
+  border-color: #ef24f9;
+}
+.button.vault-festival-colour:hover {
+  color: #f46efb;
+  border-color: #f46efb;
 }
 
 .button--open-in-app {
@@ -1561,6 +1577,6 @@ nav .current {
   border-radius: 4px;
   border: solid 1px rgba(255, 255, 255, 0.25);
   background: #161616;
-  width: 270px;
+  width: 280px;
   margin: 5px 0;
 }
