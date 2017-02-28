@@ -995,6 +995,13 @@ ul {
   color: #f46efb;
 }
 
+.croydonites-festival-colour {
+  color: #aaa;
+}
+.croydonites-festival-colour:hover {
+  color: #d0d0d0;
+}
+
 .alert {
   width: 100%;
   display: block;

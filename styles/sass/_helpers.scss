@@ -158,6 +158,13 @@
     color: lighten($vault-festival, 15%);
   }
 }
+.croydonites-festival-colour {
+  color: $croydonites-festival;
+
+  &:hover {
+    color: lighten($croydonites-festival, 15%);
+  }
+}
 
 
 // for alerts
