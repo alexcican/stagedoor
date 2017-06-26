@@ -982,10 +982,10 @@ ul {
 }
 
 .camden-fringe-colour {
-  color: #ff00b0;
+  color: #fe0000;
 }
 .camden-fringe-colour:hover {
-  color: #ff00b0;
+  color: #fe0000;
 }
 
 .vault-festival-colour {
@@ -1223,8 +1223,8 @@ ul {
   width: 260px;
 }
 .button.camden-fringe-colour {
-  color: #ff00b0;
-  border-color: #ff00b0;
+  color: #fe0000;
+  border-color: #fe0000;
 }
 .button.camden-fringe-colour:hover {
   color: #53FACE;
