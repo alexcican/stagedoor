@@ -23,6 +23,7 @@ if (!notiOS) {
   var venueID = getParameterByName('venue');
   var companyID = getParameterByName('comp');
   var performanceID = getParameterByName('perf');
+  var listID = getParameterByName('list');
   var redirectURL;
 
   // if venue ID is not empty, store the ID
@@ -34,6 +35,9 @@ if (!notiOS) {
   // if performance ID is not empty, store the ID
   if (performanceID !== null)
     redirectURL = "stagedoor://performances/" + performanceID;
+  // if list ID is not empty, store the ID
+  if (listID !== null)
+    redirectURL = "stagedoor://list/" + listID;
 
 
   // replace link URLs
