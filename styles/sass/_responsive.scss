@@ -1,4 +1,10 @@
 // DESKTOPS
+@media all and (min-width: 1440px) {
+  header[class^="header--"]:before {
+    width: 25px;
+    left: -25px;
+  }
+}
 @media all and (min-width: 1200px) {
   // expand container for more width
   .max-width--980 {

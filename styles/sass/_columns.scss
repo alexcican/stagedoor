@@ -12,10 +12,32 @@
 }
 
 
+// 3 equal columns
+.columns--4 > * {
+  @include rows(4, 1%);
+  display: inline-block;
+  vertical-align: top;
+
+  // breakpoint where 4 columns should become 2 columns
+  @media (max-width: 850px) {
+    @include rows(2, 3%);
+    &:not(:last-child) {
+      padding-bottom: $space * 3;
+    }
+  }
+
+  // breakpoint where 4 columns should become 1 column
+  @media (max-width: 380px) {
+    @include rows(1, 0);
+    padding-bottom: 3%;
+  }
+}
+
+
 
 // 3 equal columns
 .columns--3 > * {
-  @include rows(3, 5%);
+  @include rows(3, 3%);
   display: inline-block;
   vertical-align: top;
 

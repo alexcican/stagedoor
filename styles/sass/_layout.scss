@@ -70,11 +70,23 @@
 
 
 // widths
+.max-width--1200 {
+  max-width: 1200px;
+}
 .max-width--980 {
   max-width: 980px;
 }
+.max-width--850 {
+  max-width: 850px;
+}
+.max-width--700 {
+  max-width: 700px;
+}
 .max-width--650 {
   max-width: 650px;
+}
+.max-width--600 {
+  max-width: 600px;
 }
 .width--70 {
   width: 70%;
@@ -97,6 +109,9 @@
 .padding--top-bottom-one-space {
   padding: $space 0;
 }
+.padding--top-bottom-six-spaces {
+  padding: $space * 6 0;
+}
 
 .padding--top-half-space {
   padding-top: $space / 2;
@@ -117,6 +132,9 @@
 .padding--bottom-four-spaces {
   padding-bottom: $space * 4;
 }
+.padding--bottom-eight-spaces {
+  padding-bottom: $space * 8;
+}
 
 .padding--left-one-space {
   padding-left: $space;
@@ -124,11 +142,16 @@
 .padding--left-two-spaces {
   padding-left: $space * 2;
 }
+.padding--left-three-spaces {
+  padding-left: $space * 3;
+}
+.padding--left-four-spaces {
+  padding-left: $space * 4;
+}
 
 .padding--right-one-space {
   padding-right: $space;
 }
-
 
 
 
@@ -171,6 +194,12 @@
 .margin--top-six-spaces {
   margin-top: $space * 6;
 }
+.margin--top-eight-spaces {
+  margin-top: $space * 8;
+}
+.margin--top-ten-spaces {
+  margin-top: $space * 10;
+}
 
 
 
@@ -198,24 +227,22 @@
 // download button
 .button {
   color: $text;
-  border: solid 2px $text;
+  background: $red;
+  border: solid 2px $red;
   padding: $space / 1.5;
   display: block;
   text-align: center;
-  @include border-radius(10px);
+  cursor: pointer;
+  @include border-radius(50px);
   @include transitions;
 
   &:hover {
-    color: $link;
-    border-color: $link;
+    color: $red;
+    background: transparent;
     text-decoration: none;
   }
 
-  &.button--download {
-    width: 260px;
-  }
-
-  &.button--claim {
+  &.button--download, &.button--claim {
     width: 260px;
   }
 
@@ -230,11 +257,13 @@
   }
 
   &.vault-festival-colour {
-    color: $vault-festival;
+    color: $text;
+    background: $vault-festival;
     border-color: $vault-festival;
 
     &:hover {
       color: lighten($vault-festival, 15%);
+      background: transparent;
       border-color: lighten($vault-festival, 15%);
     }
   }
@@ -291,4 +320,66 @@
   width: 20px;
   padding-right: $space / 4;
   vertical-align: -15%;
+}
+
+
+
+
+// investor page Stagedoor logo change
+.logo--invest {
+  position: relative;
+
+  .text--section {
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: 60px;
+  }
+
+  b span {
+    vertical-align: 35%;
+    font-size: 1.7em;
+    padding-left: $space / 4;
+  }
+}
+
+.scroll-text {
+  position: absolute;
+  left: 0;
+}
+
+.has-bg-image--masthead {
+  background: url('../images/masthead.jpg') no-repeat;
+  background-size: 120% 120%;
+  height: 100%;
+  h1, h2 {
+    text-shadow: 0 10px 15px rgba(0,0,0,.3);
+  }
+}
+
+.has-bg-image--nyc {
+  background: url('../images/nyc.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
+}
+
+.has-bg-image--money {
+  background: url('../images/money.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
+}
+
+.has-bg-image--gradient {
+  background: #222;
+  position: relative;
+  overflow: hidden;
+}
+
+.invest-app-screenshot {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  left: 50%;
+  transform: translateX(20%);
+  width: 600px;
 }

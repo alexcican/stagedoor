@@ -13,6 +13,23 @@
 }
 
 
+// no margin
+.no-margin {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+// display
+.display--inline-block {
+  display: inline-block;
+  vertical-align: top;
+}
+.display--block {
+  display: block;
+}
+
 
 
 
@@ -59,15 +76,42 @@
   text-align: center;
 }
 
+// bigger text
+.text--bigger {
+  font-size: 1.125em;
+}
+.text--biggest {
+  font-size: 1.5em;
+}
+
+
+
+// colours of text
 .text--grey {
   color: $dark-grey;
+}
+.text--white {
+  color: $text;
+}
+.text--yellow {
+  color: $yellow;
+}
+.text--light-grey {
+  color: $light-text;
 }
 
 .text--section {
   text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 0.1em;
+  font-size: .875em;
+  font-weight: 700;
+  color: $light-text;
+  letter-spacing: .4em;
   padding: $space / 2 0;
+}
+
+.text--emphasis {
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 
@@ -84,6 +128,13 @@
 .no-link-colour.camden-fringe-colour,
 .no-link-colour.vault-festival-colour {
   color: $text;
+}
+
+
+.no-list-styling {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -111,8 +162,6 @@
 // less opacity
 .opacity--50,
 .opacity--70 {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   -webkit-text-stroke: 0.35px;
   @include transitions;
 
@@ -180,4 +229,45 @@
 .alert--yellow {
   text: $text;
   background: $red;
+}
+
+
+
+// headers from investors page
+header[class^="header--"] {
+  font-size: 0.875em;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .4em;
+  padding: $space;
+  display: inline-block;
+  position: relative;
+
+  &:before {
+    content: '';
+    width: 160px;
+    display: block;
+    background: inherit;
+    height: 4px;
+    position: absolute;
+    left: -160px;
+    top: 45%;
+  }
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.header--purple {
+  background: $purple;
+}
+.header--red {
+  background: $red;
+}
+.header--orange {
+  background: $orange;
+}
+.header--green {
+  background: $green;
 }

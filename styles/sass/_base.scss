@@ -1,11 +1,15 @@
 $font: "Avenir Next", Avenir, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, sans-serif;
 $text: #fff;
+$lightest-grey: #ddd;
 $light-text: #ccc;
 $dark-grey: #666;
 $link: #53FACE;
 $black: #222;
 $yellow: #ffe21f;
 $red: #dd2e44;
+$purple: #bd10e0;
+$green: #3bc5a6;
+$orange: #f5a623;
 $camden-fringe: #fe0000;
 $vault-festival: #ef24f9;
 $croydonites-festival: #aaa;
@@ -45,10 +49,14 @@ html, body {
 
 body {
   font-family: $font;
-  background: url('../images/bg.png') #1c1c1c no-repeat;
+  font-weight: 500;
+  background: #111 no-repeat;
   background-size: cover;
   line-height: 1.5;
   color: $text;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translateZ(0);
 }
 
 
@@ -56,32 +64,53 @@ body {
 
 
 h1 {
-  font-size: 3em;
-  font-weight: 200;
+  font-size: 3.2em;
+  font-weight: 600;
   line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.h1--giga {
+  font-size: 6em;
+  line-height: 1;
+  font-weight: 700;
 }
 
 h2,
 .text--h2 {
   font-size: 1.8em;
-  font-weight: 200;
+  font-weight: 500;
 
   small {
     font-size: .65em;
     line-height: 1;
   }
 }
+.h2--giga {
+  font-size: 2.8em;
+  font-weight: 600;
+  line-height: 1.4;
+
+  em {
+    font-weight: 600;
+  }
+}
 
 h3,
 .text--h3 {
   font-size: 1.4em;
-  font-weight: 200;
+  font-weight: 400;
   line-height: 1.6;
 }
 
-h1 strong,
+h3 + h3 {
+  margin-top: $space / 2;
+}
+
+h1 strong {
+  font-weight: 600;
+}
 h2 strong {
-  font-weight: 200;
+  font-weight: 500;
 }
 strong {
   font-weight: 400;
@@ -89,21 +118,6 @@ strong {
 
 small {
   display: block;
-}
-
-.text--bigger {
-  font-size: 1.125em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
-
-  strong {
-    font-weight: 500;
-  }
-}
-
-.text--yellow {
-  color: $yellow;
 }
 
 .text h2,
@@ -118,6 +132,7 @@ small {
 button {
   background: transparent;
   font-family: $font;
+  font-weight: 500;
   color: $text;
   cursor: pointer;
   outline: none;
