@@ -1477,6 +1477,18 @@ header[class^="header--"]:before {
   transform: translateX(20%);
   width: 600px;
 }
+.invest-app-screenshot:after {
+  content: '';
+  width: 80px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: -moz-linear-gradient(left, transparent 0%, #222222 60%);
+  background: -webkit-linear-gradient(left, transparent 0%, #222222 60%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #222222 60%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#222222',GradientType=1 );
+}
 
 nav {
   position: absolute;
@@ -1552,32 +1564,18 @@ nav .current {
 }
 @media (max-width: 850px) {
   .columns--3 > * {
-    width: 47.25%;
+    width: 97.5%;
   }
   .columns--3 > *:nth-child(n) {
     margin-right: 3%;
     margin-bottom: 1.5%;
   }
-  .columns--3 > *:nth-child(2n), .columns--3 > *:last-child {
+  .columns--3 > *:nth-child(1n), .columns--3 > *:last-child {
     margin-right: 0;
     margin-bottom: 0;
   }
   .columns--3 > *:not(:last-child) {
-    padding-bottom: 60px;
-  }
-}
-@media (max-width: 380px) {
-  .columns--3 > * {
-    width: 97.5%;
-    padding-bottom: 3%;
-  }
-  .columns--3 > *:nth-child(n) {
-    margin-right: 0;
-    margin-bottom: 0;
-  }
-  .columns--3 > *:nth-child(1n), .columns--3 > *:last-child {
-    margin-right: 0;
-    margin-bottom: 0;
+    padding-bottom: 20px;
   }
 }
 
@@ -1784,6 +1782,10 @@ nav .current {
     display: block;
     margin: 0 auto;
   }
+
+  .invest-app-screenshot {
+    display: none;
+  }
 }
 @media all and (max-width: 380px) {
   a {
@@ -1796,6 +1798,36 @@ nav .current {
   .text--h2,
   h3 {
     font-weight: 400;
+  }
+
+  .h1--giga {
+    font-size: 3em;
+  }
+
+  .h2--giga {
+    font-size: 2em;
+  }
+
+  .has-bg-image--masthead .h2--giga {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .has-bg-image--masthead {
+    background-position: 50% 0;
+    background-size: auto 560px;
+  }
+  .has-bg-image--masthead:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+  }
+
+  header[class^="header--"] {
+    font-size: 0.7em;
+    padding: 10px 20px;
   }
 
   .iphone-screenshot {
