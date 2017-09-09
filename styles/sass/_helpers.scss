@@ -231,30 +231,6 @@
   background: $red;
 }
 
-
-
-// headers from investors page
-header[class^="header--"] {
-  font-size: 0.875em;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: .4em;
-  padding: $space;
-  display: inline-block;
-  position: relative;
-
-  &:before {
-    content: '';
-    width: 160px;
-    display: block;
-    background: inherit;
-    height: 4px;
-    position: absolute;
-    left: -160px;
-    top: 45%;
-  }
-}
-
 .hidden {
   opacity: 0;
 }

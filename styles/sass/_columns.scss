@@ -62,7 +62,7 @@
   @media (max-width: 850px) {
     @include rows(1, 0);
     &:not(:last-child) {
-      padding-bottom: $space * 3;
+      padding-bottom: $space;
     }
   }
 }

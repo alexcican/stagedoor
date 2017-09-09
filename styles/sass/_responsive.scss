@@ -199,18 +199,35 @@
     display: block;
     margin: 0 auto;
   }
-
-  // invest image
-  .invest-app-screenshot {
-    display: none;
-  }
 }
 
 
 
 @media all and (max-width: 380px) {
+  body {
+    font-size: .75em;
+  }
+
+  .logo--invest b span {
+    vertical-align: 65%;
+  }
+
+  .has-bg-image--masthead .max-width--700 {
+    margin-top: 30%;
+  }
+
   a {
     color: darken($link, 30%);
+  }
+
+  .padding--top-bottom-six-spaces {
+    padding-top: $space * 3;
+    padding-bottom: $space * 2;
+  }
+
+  // investor images
+  .columns--3 .svg {
+    width: 50px;
   }
 
   // thicker fonts for mobile
@@ -219,18 +236,18 @@
   h2,
   .text--h2,
   h3 {
-    font-weight: 400;
+    font-weight: 500;
   }
 
   .h1--giga {
-    font-size: 3em;
+    font-size: 3.5em;
   }
   .h2--giga {
-    font-size: 2em;
-  }
-  .has-bg-image--masthead .h2--giga {
     font-size: 1.5em;
-    text-align: center;
+  }
+
+  .text--bigger {
+    line-height: 1.6;
   }
 
   // position iphone correctly for investor page
@@ -242,8 +259,17 @@
       content: '';
       width: 100%;
       height: 100%;
-      background: rgba(0,0,0,.3);
+      background: rgba(0,0,0,.45);
       position: absolute;
+    }
+
+    .h2--giga {
+      font-size: 1.8em;
+      text-align: center;
+    }
+
+    h1, h2 {
+      text-shadow: 2px 3px 10px rgba(0,0,0,1);
     }
   }
 
