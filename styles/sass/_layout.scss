@@ -448,3 +448,41 @@ header[class^="header--"] {
     top: 15px;
   }
 }
+
+// investor play video thumbnail
+.link--play-video {
+  position: relative;
+
+  &:before {
+    display: block;
+    content: '\25B6';
+    position: absolute;
+    bottom: 180%;
+    left: 32%;
+    font-size: 3em;
+    text-align: center;
+    padding-top: 8px;
+    padding-left: 10px;
+    width: 70px;
+    height: 72px;
+    background: $red;
+    color: $text;
+    z-index: 100;
+    @include border-radius(50%);
+  }
+
+  &:hover {
+    &:before {
+      background: $text;
+      color: $red;
+    }
+    img {
+      opacity: .7;
+    }
+  }
+
+  // rounded corners for thumb
+  img {
+    @include border-radius(10px);
+  }
+}

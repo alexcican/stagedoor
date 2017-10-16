@@ -33,14 +33,14 @@
 </head>
 <body>
   <!-- Google Tag Manager -->
-  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MQWRJJ"
+  <!--noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MQWRJJ"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-MQWRJJ');</script>
-  <!-- End Google Tag Manager  -->
+  <!-- End Google Tag Manager -->
 
   <div class="container">
     <section class="has-bg-image--masthead">
@@ -51,12 +51,17 @@
           <b><span>Stagedoor</span></b>
         </div>
 
-        <div class="max-width--700  margin--top-six-spaces">
+        <div class="max-width--650  margin--top-three-spaces">
           <h1 class="h1--giga">Theatre <br/>for everyone.</h1>
-          <h2 class="h2--giga  margin--top-one-space">Own a part of the most <br/>exciting theatre tech company <br/>in the world.</h2>
+          <h2 class="h2--giga  margin--top-one-space">Own a part of the most exciting theatre tech company in the world.</h2>
+          <p class="margin--top-two-spaces">
+            <a href="https://www.youtube.com/watch?v=DgFc0esO-uk" class="link--play-video  js-popup" id="trk-playvideo-link" title="Watch the video">
+              <img src="/images/video-thumbnail.jpg" alt="investor video stagedoor" height="150" />
+            </a>
+          </p>
         </div>
 
-        <div class="scroll-text  margin--top-eight-spaces  text--section">Scroll down</div>
+        <div class="scroll-text  margin--top-eight-spaces  padding--top-one-space  text--section">Scroll down</div>
       </div>
     </section>
 
@@ -70,7 +75,7 @@
         <h2 class="h2--giga">We believe that theatre <em>is for everyone</em>, and by making it more accessible, we can bring more people close to it.</h2>
         <h2 class="padding--top-two-spaces">Stagedoor essentially <span class="text--emphasis">levels the playing field</span> between small and big budget productions. By giving a voice to the community, we believe that theatre goers can discover the best shows for them.</h2>
         <h2 class="padding--top-two-spaces">We are building a new way for theatre lovers to discover, book, and experience theatre. And <span class="text--emphasis">we want you</span> to be part of it.</h2>
-        <h2 class="padding--top-two-spaces">Pre-register your interest for a chance to invest in Stagedoor.</h2>
+        <h2 class="padding--top-two-spaces">Pre-register your interest for a chance to join our journey.</h2>
         <h2><a href="https://stagedoor1.typeform.com/to/hSAEsj" class="button  button--download  margin--top-two-spaces">Pre-register now</a></h2>
       </div>
     </section>
@@ -200,15 +205,15 @@
 
 
     <section class="text  padding--top-bottom-six-spaces  max-width--980  horizontal--center">
-      <h2 class="h2--giga">Owning a part of Stagedoor.</h2>
+      <h2 class="h2--giga">Stagedoor funding.</h2>
       <h2 class="padding--top-two-spaces">For our second funding round we are raising £300,000 from Angel investors and strategic theatre industry partners. Our goal is to grow our user base to 100,000 in London, execute on our monetisation strategy, and prepare for geographical expansion in NYC. Stagedoor has also been approved for an EU Innovation grant of €135,000.</h2>
       <h2 class="padding--top-two-spaces">Our early stage investors and board members include tech entrepreneurs and theatre professionals. Being a very community-focused product, we wanted to open-up this funding round to our community and theatre lovers around the globe.</h2>
-      <h2 class="padding--top-two-spaces  h2--giga">If you’d like to own a piece of Stagedoor and be part of the journey, pre-register your interest below.</h2>
-      <p class="text--bigger">* Investors will be selected on a first-come, first-served basis.</p>
+      <h2 class="padding--top-two-spaces  h2--giga">If you’d like to learn more and be part of the journey, pre-register your interest below.</h2>
+      <p class="text--bigger">* Selection will be made on a first-come, first-served basis.</p>
       <h2><a href="https://stagedoor1.typeform.com/to/hSAEsj" class="button  button--download  margin--top-two-spaces">Pre-register now</a></h2>
     </section>
     <section class="max-width--980  horizontal--center  text--light-grey">
-      Investing involves risks, including loss of capital, illiquidity, lack of dividends and dilution, and it should be done only as part of a diversified portfolio. This webpage has been approved as a financial promotion by Seedrs Limited which is authorised and regulated by the Financial Conduct Authority.
+      This is not an invitation to invest. Investing involves risks, including loss of capital, illiquidity, lack of dividends and dilution, and it should be done only as part of a diversified portfolio. This webpage has been approved as a financial promotion by Seedrs Limited which is authorised and regulated by the Financial Conduct Authority.
     </section>
   </div>
 
@@ -228,8 +233,14 @@
 
   <!-- JS scripts -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="/scripts/partials/skrollr.min.js"></script>
+  <script src="/scripts/partials/_skrollr.min.js"></script>
+  <script src="/scripts/partials/_popup.min.js"></script>
   <script>
+    $('.js-popup').magnificPopup({
+      // closeOnBgClick: false,
+      type:'iframe'
+    });
+
     if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ) {
     } else {
       $('.invest-app-screenshot').append('<img src="images/discover.jpg" alt="discover screenshot" />');
@@ -254,7 +265,7 @@
     function setDimensions(){
       var windowHeight = $window.height();
       var scrollTop = $window.scrollTop();
-      scrollText.css('top', windowHeight - scrollTop - 250 + 'px');
+      scrollText.css('top', windowHeight - scrollTop - 220 + 'px');
       $('.has-bg-image--masthead').css('height', windowHeight + 'px');
 
       if (windowHeight > 900) {
@@ -273,14 +284,14 @@
     // hide or show "scroll down" text
     function fadeScrollText() {
       var windowHeight = $window.height();
-      scrollText.fadeOut('slow');
+      scrollText.fadeOut('fast');
 
       if (windowHeight > 700) {
         var scrollTop = $window.scrollTop();
         if (scrollTop < 10)
           setTimeout(function() {
             scrollText.fadeIn('slow');
-          }, 2500);
+          }, 6000);
         if (scrollTop > 100)
           scrollText.fadeOut('slow');
       }
