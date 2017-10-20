@@ -108,3 +108,22 @@ if (!notiOS) {
     document.getElementsByTagName('body')[0].appendChild(textContainer);
   }
 }
+myFunction();
+function myFunction() {
+  var txt;
+  var code = prompt("Please enter the code you received:", "");
+  if (code == null || code == "") {
+    txt = "Access denied.";
+  } else {
+    code = code.toLowerCase();
+    code = decode(code);
+    if (code == '736578') {
+      window.location.replace("http://google.com");
+      txt = "You’re in! Loading page…";
+    } else {
+      txt = "Wrong code. Access denied.";
+    }
+  }
+  document.getElementById("response").innerHTML = txt;
+}
+function decode(str) {var number = '';for(var i=0; i < str.length; i++) {number += ''+str.charCodeAt(i).toString(16);}return number;}
