@@ -30,13 +30,13 @@
   <meta name="twitter:description" content="Access denied. Enter the code you received to access this page.">
   <meta name="twitter:image:src" content="http://stagedoorapp.com/images/stagedoor-cover.png" />
 </head>
-<body onload="showAlert();">
+<body onload="showAlert();" style="background-image: url('http://stagedoorapp.com/images/masthead.jpg');background-position: 50% 50%;">
   <h1 id="response" class="text--center  padding--top-two-spaces"></h1>
 
   <script>
   function showAlert() {
      var script = document.createElement('script');
-     script.src = 'https://stagedoorapp.com/scripts/partials/access-redirect.min.js';
+     script.src = 'scripts/partials/access-redirect.min.js';
      var head = document.getElementsByTagName("head")[0];
      head.appendChild(script);
   }
