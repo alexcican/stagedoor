@@ -268,9 +268,26 @@
       text-align: center;
     }
 
+    // centre the investor video link in masthead
+    .inverstor-video--link {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    // iOS shows emoji, position correctly
+    .link--play-video:before {
+      left: 45%;
+      background: transparent;
+    }
+
     h1, h2 {
       text-shadow: 2px 3px 10px rgba(0,0,0,1);
     }
+  }
+
+  // height of iframe smaller
+  .inverstor-video--iframe {
+    height: 200px;
   }
 
   // smaller header section separators

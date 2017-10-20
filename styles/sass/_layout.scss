@@ -486,3 +486,7 @@ header[class^="header--"] {
     @include border-radius(10px);
   }
 }
+
+.inverstor-video--iframe {
+  height: 550px;
+}

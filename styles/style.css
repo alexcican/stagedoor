@@ -1550,6 +1550,10 @@ header[class^="header--"]:before {
   border-radius: 10px;
 }
 
+.inverstor-video--iframe {
+  height: 550px;
+}
+
 nav {
   position: absolute;
   right: 0;
@@ -1904,8 +1908,20 @@ nav .current {
     font-size: 1.8em;
     text-align: center;
   }
+  .has-bg-image--masthead .inverstor-video--link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .has-bg-image--masthead .link--play-video:before {
+    left: 45%;
+    background: transparent;
+  }
   .has-bg-image--masthead h1, .has-bg-image--masthead h2 {
     text-shadow: 2px 3px 10px black;
+  }
+
+  .inverstor-video--iframe {
+    height: 200px;
   }
 
   header[class^="header--"] {
