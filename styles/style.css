@@ -1550,7 +1550,7 @@ header[class^="header--"]:before {
   border-radius: 10px;
 }
 
-.inverstor-video--iframe {
+.investor-video--iframe {
   height: 550px;
 }
 
@@ -1908,7 +1908,7 @@ nav .current {
     font-size: 1.8em;
     text-align: center;
   }
-  .has-bg-image--masthead .inverstor-video--link {
+  .has-bg-image--masthead .investor-video--link {
     text-align: center;
     margin-top: 20px;
   }
@@ -1920,7 +1920,7 @@ nav .current {
     text-shadow: 2px 3px 10px black;
   }
 
-  .inverstor-video--iframe {
+  .investor-video--iframe {
     height: 200px;
   }
 
