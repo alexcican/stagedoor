@@ -490,3 +490,59 @@ header[class^="header--"] {
 .investor-video--iframe {
   height: 550px;
 }
+
+
+// top bar in investor page
+.top-bar {
+  background: $red;
+  text: $text;
+  width: 100%;
+  padding: $space / 4 0 $space;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  opacity: 0;
+  z-index: 1000;
+  @include box-shadow(0 -10px 50px rgba(0,0,0,.4));
+  @include animation(5s, .3s, moveUp);
+}
+
+// close top bar
+.js-close {
+  border: none;
+  position: absolute;
+  top: 0;
+  right: $space / 2;
+  font-size: 1.25em;
+  font-weight: 700;
+  opacity: .8;
+}
+
+// progress bar in investor page
+.progress-bar {
+  width: 40%;
+  max-width: 400px;
+  margin: 10px auto;
+  display: block;
+  background: darken($red, 20%);
+  height: 20px;
+  @include border-radius(10px);
+
+  .progress-bar__text {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: 700;
+    padding-top: 5px;
+    font-size: .75em;
+    opacity: .9;
+  }
+}
+
+.progress-bar__completed {
+  width: 0;
+  display: block;
+  background: $link;
+  height: 20px;
+  @include border-radius(10px);
+}

@@ -33,7 +33,7 @@
 </head>
 <body>
   <!-- Google Tag Manager -->
-  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MQWRJJ"
+  <!--noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MQWRJJ"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -41,6 +41,18 @@
   '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-MQWRJJ');</script>
   <!-- End Google Tag Manager -->
+
+  <div class="top-bar">
+    <div class="top-bar__content  text--center">
+      <h3><b><a href="https://stagedoor1.typeform.com/to/hSAEsj" target="_blank">Pre-registrations</a> are now open. Demand is high, don&rsquo;t miss out!</b></h3>
+      <a href="https://stagedoor1.typeform.com/to/hSAEsj" target="_blank" class="progress-bar  no-link-colour" data-percent="0">
+        <span class="progress-bar__completed"></span>
+        <span class="progress-bar__text"><span class="progress-bar__number">0</span>% funded of &pound;100K</span>
+      </a>
+    </div>
+    <button class="js-close" title="Close this alert">&times;</button>
+  </div>
+
 
   <div class="container">
     <section class="has-bg-image--masthead">
@@ -76,7 +88,7 @@
         <h2 class="padding--top-two-spaces">Stagedoor essentially <span class="text--emphasis">levels the playing field</span> between small and big budget productions. By giving a voice to the community, we believe that theatre goers can discover the best shows for them.</h2>
         <h2 class="padding--top-two-spaces">We are building a new way for theatre lovers to discover, book, and experience theatre. And <span class="text--emphasis">we want you</span> to be part of it.</h2>
         <h2 class="padding--top-two-spaces">Pre-register your interest for a chance to join our journey.</h2>
-        <h2><a href="https://stagedoor1.typeform.com/to/hSAEsj" class="button  button--download  margin--top-two-spaces">Pre-register now</a></h2>
+        <h2><a href="https://stagedoor1.typeform.com/to/hSAEsj" target="_blank" class="button  button--download  margin--top-two-spaces">Pre-register now</a></h2>
       </div>
     </section>
 
@@ -222,7 +234,7 @@
       <h2 class="padding--top-two-spaces">Our early stage investors and board members include tech entrepreneurs and theatre professionals. Being a very community-focused product, we wanted to open-up this funding round to our community and theatre lovers around the globe.</h2>
       <h2 class="padding--top-two-spaces  h2--giga">If you’d like to learn more and be part of the journey, pre-register your interest below.</h2>
       <p class="text--bigger">* Selection will be made on a first-come, first-served basis.</p>
-      <h2><a href="https://stagedoor1.typeform.com/to/hSAEsj" class="button  button--download  margin--top-two-spaces">Pre-register now</a></h2>
+      <h2><a href="https://stagedoor1.typeform.com/to/hSAEsj" target="_blank" class="button  button--download  margin--top-two-spaces">Pre-register now</a></h2>
     </section>
     <section class="max-width--980  horizontal--center  text--light-grey">
       This is not an invitation to invest. Investing involves risks, including loss of capital, illiquidity, lack of dividends and dilution, and it should be done only as part of a diversified portfolio.
@@ -253,6 +265,42 @@
       type:'iframe'
     });
 
+    // find number of % completed
+    var startDate = new Date(2017, 9, 23);
+    var number = Math.ceil((new Date() - startDate)/60000 - 1000)/100;
+
+    // animate progress bar
+    $('.progress-bar').attr('data-percent', number);
+    var widthAnimated;
+    if (number > 100) {
+      widthAnimated = '100%';
+    } else {
+      widthAnimated = number + '%';
+    }
+
+    // count up to number % completed with delay
+    setTimeout(function() {
+      $('.progress-bar__number').each(function () {
+        $(this).prop('Counter',0).animate({
+          Counter: number
+        }, {
+          duration: 3000,
+          easing: 'swing',
+          step: function (now) {
+            $(this).text(Math.ceil(now));
+          }
+        });
+      });
+      $('.progress-bar__completed').animate({width: widthAnimated}, 3000);
+    }, 6000);
+
+    // close top bar
+    $('.js-close').click(function() {
+      $('.top-bar').remove();
+    });
+
+
+    // hide image of app screenshot if on mobile (save bandwidth)
     if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ) {
     } else {
       $('.invest-app-screenshot').append('<img src="images/discover.jpg" alt="discover screenshot" />');

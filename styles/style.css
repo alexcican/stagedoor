@@ -759,7 +759,6 @@ body {
   color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  transform: translateZ(0);
 }
 
 h1 {
@@ -1552,6 +1551,87 @@ header[class^="header--"]:before {
 
 .investor-video--iframe {
   height: 550px;
+}
+
+.top-bar {
+  background: #dd2e44;
+  text: #fff;
+  width: 100%;
+  padding: 5px 0 20px;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  opacity: 0;
+  z-index: 1000;
+  -moz-box-shadow: 0 -10px 50px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 -10px 50px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 -10px 50px rgba(0, 0, 0, 0.4);
+  -webkit-animation-delay: 5s;
+  -webkit-animation-duration: 0.3s;
+  -webkit-animation-name: moveUp;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.33, 1.02, 0.18, 1.4);
+  -moz-animation-delay: 5s;
+  -moz-animation-duration: 0.3s;
+  -moz-animation-name: moveUp;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-timing-function: cubic-bezier(0.33, 1.02, 0.18, 1.4);
+  -o-animation-delay: 5s;
+  -o-animation-duration: 0.3s;
+  -o-animation-name: moveUp;
+  -o-animation-fill-mode: forwards;
+  -o-animation-timing-function: cubic-bezier(0.33, 1.02, 0.18, 1.4);
+  -ms-animation-delay: 5s;
+  -ms-animation-duration: 0.3s;
+  -ms-animation-name: moveUp;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-timing-function: cubic-bezier(0.33, 1.02, 0.18, 1.4);
+  animation-delay: 5s;
+  animation-duration: 0.3s;
+  animation-name: moveUp;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.33, 1.02, 0.18, 1.4);
+}
+
+.js-close {
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 1.25em;
+  font-weight: 700;
+  opacity: .8;
+}
+
+.progress-bar {
+  width: 40%;
+  max-width: 400px;
+  margin: 10px auto;
+  display: block;
+  background: #8e1726;
+  height: 20px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.progress-bar .progress-bar__text {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-weight: 700;
+  padding-top: 5px;
+  font-size: .75em;
+  opacity: .9;
+}
+
+.progress-bar__completed {
+  width: 0;
+  display: block;
+  background: #53FACE;
+  height: 20px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
 }
 
 nav {
