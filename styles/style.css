@@ -1372,9 +1372,9 @@ ul {
 }
 
 .appicon {
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
   -moz-box-shadow: 0 0 18px 1px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 0 18px 1px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 18px 1px rgba(0, 0, 0, 0.3);
