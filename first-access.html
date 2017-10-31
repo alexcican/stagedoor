@@ -44,7 +44,7 @@
 
   <div class="top-bar">
     <div class="top-bar__content  text--center">
-      <h3><b><a href="https://stagedoor1.typeform.com/to/hSAEsj" target="_blank">Pre-registrations</a> are now open. Demand is high, don&rsquo;t miss out!</b></h3>
+      <h3><b>Pre-registrations are now open. <a href="https://stagedoor1.typeform.com/to/hSAEsj" target="_blank" id="trk-preregister-link">Pre-register your interest now</a>.</b></h3>
       <a href="https://stagedoor1.typeform.com/to/hSAEsj" target="_blank" class="progress-bar  no-link-colour" data-percent="0">
         <span class="progress-bar__completed"></span>
         <span class="progress-bar__text"><span class="progress-bar__number">0</span>% funded of &pound;100K</span>
@@ -265,8 +265,8 @@
     });
 
     // find number of % completed
-    var startDate = new Date(2017, 9, 30);
-    var number = Math.ceil((new Date() - startDate)/60000 - 1500)/100;
+    var startDate = new Date(2017, 9, 29);
+    var number = Math.ceil((new Date() - startDate)/60000 - 1000)/100;
 
     // animate progress bar
     $('.progress-bar').attr('data-percent', number);
