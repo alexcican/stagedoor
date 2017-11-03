@@ -265,8 +265,13 @@
     });
 
     // find number of % completed
+<<<<<<< HEAD
     var startDate = new Date(2017, 9, 13);
     var number = Math.ceil((new Date() - startDate)/60000 - 1000)/450;
+=======
+    var startDate = new Date(2017, 9, 28);
+    var number = Math.ceil((new Date() - startDate)/60000 - 1000)/100;
+>>>>>>> b7c312ac7f8c3bec0e4a3687c7ccbb98fbf385b6
 
     // animate progress bar
     $('.progress-bar').attr('data-percent', number);
