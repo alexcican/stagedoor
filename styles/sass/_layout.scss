@@ -246,6 +246,21 @@
     width: 260px;
   }
 
+  &.button--funding {
+    width: 350px;
+  }
+
+  &.button--white {
+    background: $text;
+    color: $red;
+
+    &:hover {
+      background: transparent;
+      color: $text;
+      border-color: $text;
+    }
+  }
+
   &.camden-fringe-colour {
     color: $camden-fringe;
     border-color: $camden-fringe;
