@@ -77,7 +77,7 @@ if (!notiOS) {
     redirectURL = "stagedoor://threatre_company/" + companyID;
   // if performance ID is not empty, store the ID
   if (performanceID !== null)
-    redirectURL = "stagedoor://performances/" + performanceID;
+    redirectURL = "stagedoor://performance_id=" + performanceID;
   // if list ID is not empty, store the ID
   if (listID !== null)
     redirectURL = "stagedoor://list/" + listID;
