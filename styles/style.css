@@ -1047,10 +1047,10 @@ ul {
 }
 
 .vault-festival-colour {
-  color: #ef24f9;
+  color: #e40346;
 }
 .vault-festival-colour:hover {
-  color: #f46efb;
+  color: #fc3772;
 }
 
 .croydonites-festival-colour {
@@ -1361,13 +1361,13 @@ ul {
 }
 .button.vault-festival-colour {
   color: #fff;
-  background: #ef24f9;
-  border-color: #ef24f9;
+  background: #e40346;
+  border-color: #e40346;
 }
 .button.vault-festival-colour:hover {
-  color: #f46efb;
+  color: #fc3772;
   background: transparent;
-  border-color: #f46efb;
+  border-color: #fc3772;
 }
 
 .button--open-in-app {
