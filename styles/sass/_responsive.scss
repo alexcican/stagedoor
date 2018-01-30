@@ -13,10 +13,20 @@
 }
 
 // if less height
-@media all and (max-height: 750px) {
+@media all and (max-height: 700px) {
   // smaller screenshot
   .iphone-screenshot {
     width: 70%;
+
+    .iphone-screenshot__inside {
+      left: 21px;
+      bottom: 80px;
+    }
+
+    .iphone-screenshot__inside--video {
+      left: 16px !important;
+      bottom: -185px !important;
+    }
   }
 
   // less top spacing

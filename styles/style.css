@@ -1306,10 +1306,7 @@ ul {
   position: absolute;
   bottom: 90px;
   left: 24px;
-  width: 86.5%;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
+  width: 87%;
 }
 .iphone-screenshot .iphone-screenshot__inside.iphone-screenshot__inside--video {
   bottom: -80px;
@@ -1776,9 +1773,17 @@ nav .current {
     max-width: 1100px;
   }
 }
-@media all and (max-height: 750px) {
+@media all and (max-height: 700px) {
   .iphone-screenshot {
     width: 70%;
+  }
+  .iphone-screenshot .iphone-screenshot__inside {
+    left: 21px;
+    bottom: 80px;
+  }
+  .iphone-screenshot .iphone-screenshot__inside--video {
+    left: 16px !important;
+    bottom: -185px !important;
   }
 
   .margin--top-four-spaces {
