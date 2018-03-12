@@ -112,7 +112,8 @@
     line-height: 1.4;
   }
 
-  .container.padding--top-six-spaces {
+  .container.padding--top-six-spaces,
+  .container.padding--top-four-spaces {
     padding-top: $space / 2;
   }
 
@@ -166,6 +167,10 @@
       top: $space * 4.5;
     }
   }
+  nav.podcast{
+    top: $space * 2;
+  }
+
   // move text below navigation
   .float--left.width--40 {
     margin-top: $space * 4;
