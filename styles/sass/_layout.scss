@@ -165,6 +165,9 @@
 
 
 // margin
+.margin--bottom-one-space {
+  margin-bottom: $space;
+}
 .margin--bottom-four-spaces {
   margin-bottom: $space * 4;
 }

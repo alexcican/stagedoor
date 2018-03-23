@@ -75,6 +75,9 @@
 .text--center {
   text-align: center;
 }
+.text--right {
+  text-align: right;
+}
 
 // bigger text
 .text--bigger {
@@ -115,6 +118,10 @@
 .text--emphasis {
   font-weight: 600;
   text-decoration: underline;
+}
+
+.text--strong {
+  font-weight: 600;
 }
 
 
@@ -194,6 +201,10 @@
   @include border-radius(4px);
 }
 
+// 35% opacity
+.border--opacity-35 {
+  border-color: rgba(255,255,255,.35);
+}
 // 25% opacity
 .border--opacity-25 {
   border-color: rgba(255,255,255,.25);
