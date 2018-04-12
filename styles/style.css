@@ -966,7 +966,7 @@ a.huge-link:hover {
   text-decoration: none;
 }
 a.link--red {
-  color: #dd2e44;
+  color: #eb1234;
 }
 
 ul {
@@ -1053,7 +1053,7 @@ ul {
 }
 
 .text--red {
-  color: #dd2e44;
+  color: #eb1234;
 }
 
 .text--light-grey {
@@ -1192,7 +1192,7 @@ ul {
 
 .alert--yellow {
   text: #fff;
-  background: #dd2e44;
+  background: #eb1234;
 }
 
 .hidden {
@@ -1204,7 +1204,7 @@ ul {
 }
 
 .header--red {
-  background: #dd2e44;
+  background: #eb1234;
 }
 
 .header--orange {
@@ -1459,8 +1459,8 @@ ul {
 
 .button {
   color: #fff;
-  background: #dd2e44;
-  border: solid 2px #dd2e44;
+  background: #eb1234;
+  border: solid 2px #eb1234;
   padding: 13.33333px;
   display: block;
   text-align: center;
@@ -1474,7 +1474,7 @@ ul {
   transition: all 0.2s ease-in-out;
 }
 .button:hover {
-  color: #dd2e44;
+  color: #eb1234;
   background: transparent;
   text-decoration: none;
 }
@@ -1486,7 +1486,7 @@ ul {
 }
 .button.button--white {
   background: #fff;
-  color: #dd2e44;
+  color: #eb1234;
 }
 .button.button--white:hover {
   background: transparent;
@@ -1683,7 +1683,7 @@ header[class^="header--"]:before {
   padding-left: 10px;
   width: 70px;
   height: 72px;
-  background: #dd2e44;
+  background: #eb1234;
   color: #fff;
   z-index: 100;
   -moz-border-radius: 50%;
@@ -1692,7 +1692,7 @@ header[class^="header--"]:before {
 }
 .link--play-video:hover:before {
   background: #fff;
-  color: #dd2e44;
+  color: #eb1234;
 }
 .link--play-video:hover img {
   opacity: .7;
@@ -1708,7 +1708,7 @@ header[class^="header--"]:before {
 }
 
 .top-bar {
-  background: #dd2e44;
+  background: #eb1234;
   text: #fff;
   width: 100%;
   padding: 5px 0 20px;
@@ -1762,7 +1762,7 @@ header[class^="header--"]:before {
   max-width: 400px;
   margin: 10px auto;
   display: block;
-  background: #8e1726;
+  background: #8c0b1f;
   height: 20px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -3043,7 +3043,7 @@ img.mfp-img {
 }
 
 .noty_theme__metroui.noty_type__error {
-  background-color: #dd2e44;
+  background-color: #eb1234;
   color: #FFF;
 }
 
