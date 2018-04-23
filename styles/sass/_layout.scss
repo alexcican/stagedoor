@@ -318,15 +318,6 @@
 
 
 
-// app icon
-.appicon {
-  @include border-radius(40px);
-  @include box-shadow(0 0 18px 1px rgba(0,0,0,.3));
-}
-
-
-
-
 // position
 .position--absolute {
   position: absolute;
