@@ -74,7 +74,7 @@ if (!notiOS) {
     redirectURL = "stagedoor://venue_id=" + venueID;
   // if company ID is not empty, store the ID
   if (companyID !== null)
-    redirectURL = "stagedoor://threatre_company_id=" + companyID;
+    redirectURL = "stagedoor://theatre_company_id=" + companyID;
   // if performance ID is not empty, store the ID
   if (performanceID !== null)
     redirectURL = "stagedoor://performance_id=" + performanceID;
