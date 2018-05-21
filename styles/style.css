@@ -853,6 +853,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 40px;
+  font-size: .875em;
+}
+
+td, th {
+  border: 1px solid #666;
+  text-align: left;
+  padding: 10px;
+}
+
+tr:nth-child(odd) {
+  background-color: #222;
+}
+
 h1 {
   font-size: 3.2em;
   font-weight: 600;
@@ -1976,13 +1993,12 @@ nav .current {
   }
 }
 @media all and (max-width: 850px) {
-  h1 {
-    font-size: 1.8em;
-    text-align: center;
+  .container {
+    padding: 0 5%;
   }
 
-  h2 {
-    text-align: center;
+  h1 {
+    font-size: 1.8em;
   }
 
   h2,
@@ -2104,6 +2120,10 @@ nav .current {
   .iphone-screenshot {
     display: block;
     margin: 0 auto;
+  }
+
+  td, th {
+    padding: 5px 2.5px;
   }
 }
 @media all and (max-width: 380px) {
