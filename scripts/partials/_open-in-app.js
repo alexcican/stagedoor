@@ -28,16 +28,16 @@ if (!notiOS) {
 
   // if venue ID is not empty, store the ID
   if (venueID !== null)
-    redirectURL = "stagedoor://venue_id=" + venueID;
+    redirectURL = "testdoor://venue_id=" + venueID;
   // if company ID is not empty, store the ID
   if (companyID !== null)
-    redirectURL = "stagedoor://theatre_company_id=" + companyID;
+    redirectURL = "testdoor://theatre_company_id=" + companyID;
   // if performance ID is not empty, store the ID
   if (performanceID !== null)
-    redirectURL = "stagedoor://performance_id=" + performanceID;
+    redirectURL = "testdoor://performance_id=" + performanceID;
   // if list ID is not empty, store the ID
   if (listID !== null)
-    redirectURL = "stagedoor://list_id=" + listID;
+    redirectURL = "testdoor://list_id=" + listID;
 
 
   // replace link URLs
