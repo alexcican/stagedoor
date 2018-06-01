@@ -23,7 +23,8 @@ if (!notiOS) {
   var venueID = getParameterByName('venue');
   var companyID = getParameterByName('comp');
   var performanceID = getParameterByName('perf');
-  var listID = getParameterByName('list');
+  var listID = getParameterByName('l');
+  if (listID == null) listID = getParameterByName('list');
   var redirectURL;
 
   // if venue ID is not empty, store the ID
