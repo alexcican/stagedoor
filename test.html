@@ -6,8 +6,25 @@
 </head>
 <body>
 
-   <a href="https://alexcican.com/stagedoor/test?v=4">Test me</a>
+   <a href="https://alexcican.com/stagedoor/test?v=4&amp;reload=true">Test me</a>
 
-   <a href="https://stagedoorapp.com/almeida-theatre?v=4" target="_blank">Test me (new window)</a>
+   <script>
+    // split URL
+    function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+    var reload = getParameterByName('reload');
+    if (reload == "true") {
+      alert('reloaded');
+    } else {
+      alert('not');
+    }
+   </script>
 </body>
 </html>
