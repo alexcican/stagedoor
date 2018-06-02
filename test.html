@@ -5,8 +5,7 @@
    <title>Test</title>
 </head>
 <body>
-
-   <a href="https://alexcican.com/stagedoor/test?v=4&amp;reload=true">Test me</a>
+   <a href="https://alexcican.com/stagedoor/test?v=4&amp;fromWeb=true">Test me</a>
 
    <script>
     // split URL
@@ -19,11 +18,18 @@
       if (!results[2]) return '';
       return decodeURIComponent(results[2].replace(/\+/g, " "));
     }
-    var reload = getParameterByName('reload');
-    if (reload == "true") {
-      alert('reloaded');
-    } else {
-      alert('not');
+
+    // detect if iPhone/iPad/iPod
+    var notiOS = true;
+    if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i))) {
+      notiOS = false;
+    }
+
+    // if on iOS device check to see if user has the app or not
+    var fromWeb = getParameterByName('fromWeb');
+    if (fromWeb == "true") {
+      // means that user doesn't have the app. Show App Store alert
+      window.location = "https://itunes.apple.com/us/app/stagedoor-london-theatre-app/id963068912?ls=1&mt=8";
     }
    </script>
 </body>
