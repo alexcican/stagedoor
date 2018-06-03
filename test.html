@@ -5,9 +5,32 @@
    <title>Test</title>
 </head>
 <body>
-   <a href="https://alexcican.com/stagedoor/test?v=4&amp;fromWeb=true">Test me</a>
+   <a href="https://alexcican.com/stagedoor/test?v=4" class="testButton">Test me</a>
 
-   <script>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+  <script>
+   // detect if iPhone/iPad/iPod
+   var notiOS = true;
+   if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i))) {
+     notiOS = false;
+   }
+
+
+  if (notiOS == false) {
+    var button = document.getElementsByClassName("testButton");
+    button.onclick = function(){
+      window.location = "https://itunes.apple.com/us/app/stagedoor-london-theatre-app/id963068912?ls=1&mt=8";
+      return false;
+    }
+  }
+  </script>
+
+
+   <!--script>
     // split URL
     function getParameterByName(name, url) {
       if (!url) url = window.location.href;
@@ -31,6 +54,6 @@
       // means that user doesn't have the app. Show App Store alert
       window.location = "https://itunes.apple.com/us/app/stagedoor-london-theatre-app/id963068912?ls=1&mt=8";
     }
-   </script>
+   </script-->
 </body>
 </html>
