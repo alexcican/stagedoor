@@ -20,9 +20,9 @@
    }
 
 
-  if (notiOS == false) {
-    var button = document.getElementsByClassName("testButton");
-    button.onclick = function(){
+  var button = document.getElementsByClassName("testButton");
+  button.onclick = function(){
+    if (notiOS == false) {
       window.location = "https://itunes.apple.com/us/app/stagedoor-london-theatre-app/id963068912?ls=1&mt=8";
       return false;
     }
