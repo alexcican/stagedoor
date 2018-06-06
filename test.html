@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width" />
+   <meta charset="UTF-8" />
    <title>Test</title>
 </head>
 <body>
-   <a href="https://alexcican.com/stagedoor/test?v=4&amp;fromWeb=true">Test me</a>
+   <div>
+      <a href="https://alexcican.com/stagedoor/test?v=4&amp;fromBtnOpenApp=true">Test me (has solution)</a><br/>
+      <a href="https://alexcican.com/stagedoor/test?fromBtnOpenApp=true&amp;v=4">Test me (has altered solution)</a><br/>
+      <a href="https://alexcican.com/stagedoor/test?v=4">Test me</a>
+   </div>
 
    <script>
     // split URL
@@ -26,10 +31,12 @@
     }
 
     // if on iOS device check to see if user has the app or not
-    var fromWeb = getParameterByName('fromWeb');
-    if (fromWeb == "true") {
-      // means that user doesn't have the app. Show App Store alert
-      window.location = "https://itunes.apple.com/us/app/stagedoor-london-theatre-app/id963068912?ls=1&mt=8";
+    if (notiOS === false) {
+       var fromBtnOpenApp = getParameterByName('fromBtnOpenApp');
+       if (fromBtnOpenApp === "true") {
+         // if parameter exists means page was reloaded = user doesn't have the app. Show App Store alert
+         window.location = "https://itunes.apple.com/us/app/stagedoor-london-theatre-app/id963068912?ls=1&mt=8";
+       }
     }
    </script>
 </body>
