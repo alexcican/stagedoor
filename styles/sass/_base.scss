@@ -5,11 +5,11 @@ $light-text: #ccc;
 $dark-grey: #666;
 $link: #53FACE;
 $black: #222;
-$yellow: #ffe21f;
+$yellow: #eacf1b;
 $red: #eb1234;
 $purple: #bd10e0;
-$green: #3bc5a6;
-$orange: #ecaa3d;
+$green: #3ab196;
+$orange: #dc9828;
 $camden-fringe: #9e4fc6;
 $vault-festival: #e40346;
 $croydonites-festival: #aaa;
@@ -94,6 +94,7 @@ h2,
 .text--h2 {
   font-size: 1.8em;
   font-weight: 500;
+  line-height: 1.4;
 
   small {
     font-size: .65em;

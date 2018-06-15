@@ -887,6 +887,7 @@ h2,
 .text--h2 {
   font-size: 1.8em;
   font-weight: 500;
+  line-height: 1.4;
 }
 h2 small,
 .text--h2 small {
@@ -1000,8 +1001,7 @@ ul {
 }
 
 .display--inline-block {
-  display: inline-block;
-  vertical-align: top;
+  display: inline-block !important;
 }
 
 .display--block {
@@ -1026,6 +1026,10 @@ ul {
   position: absolute;
   top: 0;
   width: 3px !important;
+}
+
+.overflow--hidden {
+  overflow: hidden;
 }
 
 .show-on-mobile {
@@ -1066,7 +1070,7 @@ ul {
 }
 
 .text--yellow {
-  color: #ffe21f;
+  color: #eacf1b;
 }
 
 .text--red {
@@ -1225,11 +1229,11 @@ ul {
 }
 
 .header--orange {
-  background: #ecaa3d;
+  background: #dc9828;
 }
 
 .header--green {
-  background: #3bc5a6;
+  background: #3ab196;
 }
 
 .fill-height-or-more {
@@ -1413,6 +1417,10 @@ ul {
 
 .margin--top-bottom-four-spaces {
   margin: 80px 0;
+}
+
+.margin--top-bottom-six-spaces {
+  margin: 120px 0;
 }
 
 .margin--top-half-space {
@@ -1619,17 +1627,27 @@ ul {
   transform: translateX(20%);
   width: 600px;
 }
-.invest-app-screenshot:after {
+
+.has-top-bottom-fade {
+  position: relative;
+}
+.has-top-bottom-fade:before, .has-top-bottom-fade:after {
   content: '';
-  width: 80px;
-  height: 100%;
+  width: 50%;
+  height: 150px;
   position: absolute;
-  right: 0;
-  top: 0;
-  background: -moz-linear-gradient(left, transparent 0%, #222222 60%);
-  background: -webkit-linear-gradient(left, transparent 0%, #222222 60%);
-  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #222222 60%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#222222',GradientType=1 );
+  top: -50px;
+  right: -120px;
+  background: #f00;
+  z-index: 100;
+  background: -moz-linear-gradient(top, #111111 0%, #111111 17%, rgba(17, 17, 17, 0) 100%);
+  background: -webkit-linear-gradient(top, #111111 0%, #111111 17%, rgba(17, 17, 17, 0) 100%);
+  background: linear-gradient(to bottom, #111111 0%, #111111 17%, rgba(17, 17, 17, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#111111', endColorstr='#111111',GradientType=0);
+}
+.has-top-bottom-fade:after {
+  top: calc(100% - 130px);
+  transform: rotate(180deg);
 }
 
 header[class^="header--"] {
@@ -1651,6 +1669,10 @@ header[class^="header--"]:before {
   position: absolute;
   left: -160px;
   top: 45%;
+}
+
+.header--no-margin {
+  margin-left: 0 !important;
 }
 
 .date {
@@ -1798,18 +1820,12 @@ header[class^="header--"]:before {
 }
 
 nav {
-  position: absolute;
-  right: 0;
-  top: 60px;
+  text-align: right;
+  padding-bottom: 60px;
 }
 nav a {
   padding: 5px;
-  margin-left: 10px;
-}
-nav .current {
-  cursor: default;
-  color: #666;
-  text-decoration: none !important;
+  margin-left: 20px;
 }
 
 .columns--4 > * {
@@ -1994,17 +2010,17 @@ nav .current {
 }
 @media all and (max-width: 850px) {
   .container {
-    padding: 0 5%;
+    padding: 0 6%;
   }
 
   h1 {
-    font-size: 1.8em;
+    font-size: 2.5em;
   }
 
   h2,
   .text--h2,
   h3 {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
   h2 small,
   .text--h2 small,
@@ -2013,20 +2029,25 @@ nav .current {
   }
 
   .h1--giga {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   .h2--giga {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   .text--bigger {
     line-height: 1.4;
   }
 
+  small {
+    font-size: 1em;
+  }
+
+  .container,
   .container.padding--top-six-spaces,
   .container.padding--top-four-spaces {
-    padding-top: 10px;
+    padding-top: 20px;
   }
 
   .width--60,
@@ -2037,6 +2058,15 @@ nav .current {
   .download-button {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .button.button--claim, .button.button--download {
+    width: 85%;
+  }
+
+  section .button {
+    font-weight: 600;
+    font-size: 1.4em;
   }
 
   .hide-on-mobile {
@@ -2062,17 +2092,19 @@ nav .current {
   nav {
     right: auto;
     left: 10px;
-    top: 80px;
+    top: 40px;
+    position: absolute;
   }
   nav a {
     padding: 5.71429px;
     margin-left: 0;
   }
   nav.homepage--navigation {
-    right: 0;
-    left: 0;
-    text-align: center;
-    top: 90px;
+    right: 20px;
+    top: 20px;
+  }
+  nav .button {
+    padding: 6.66667px;
   }
 
   nav.podcast {
@@ -2080,9 +2112,10 @@ nav .current {
   }
 
   .float--left.width--40 {
-    margin-top: 80px;
+    margin-top: 10px;
   }
 
+  .margin--top-three-spaces,
   .margin--top-four-spaces {
     margin-top: 20px;
   }
@@ -2091,8 +2124,16 @@ nav .current {
     margin-top: 60px;
   }
 
+  .margin--top-eight-spaces {
+    margin-top: 60px;
+  }
+
   .padding--left-one-space {
     padding-left: 10px;
+  }
+
+  .padding--top-two-spaces {
+    padding-top: 20px;
   }
 
   .features-icons {
@@ -2113,10 +2154,6 @@ nav .current {
     margin: 0 auto 20px;
   }
 
-  .button--download {
-    margin: 0 auto;
-  }
-
   .iphone-screenshot {
     display: block;
     margin: 0 auto;
@@ -2124,6 +2161,10 @@ nav .current {
 
   td, th {
     padding: 5px 2.5px;
+  }
+
+  .text--center {
+    text-align: left !important;
   }
 }
 @media all and (max-width: 380px) {
@@ -2144,8 +2185,8 @@ nav .current {
   }
 
   .padding--top-bottom-six-spaces {
-    padding-top: 60px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .columns--3 .svg {
@@ -2153,23 +2194,18 @@ nav .current {
   }
 
   h1,
-  h1 strong,
+  h1 strong {
+    font-weight: 600;
+  }
+
   h2,
   .text--h2,
   h3 {
-    font-weight: 500;
-  }
-
-  .h1--giga {
-    font-size: 3.5em;
-  }
-
-  .h2--giga {
-    font-size: 1.5em;
+    font-weight: 600;
   }
 
   .text--bigger {
-    line-height: 1.6;
+    line-height: 1.5;
   }
 
   .has-bg-image--masthead {
@@ -2209,12 +2245,12 @@ nav .current {
   }
 
   .iphone-screenshot {
-    width: 60%;
+    width: 80%;
   }
   .iphone-screenshot .iphone-screenshot__inside--video {
-    width: 176px;
+    width: 230px;
     left: 14px;
-    bottom: -235px !important;
+    bottom: -180px !important;
   }
 
   .smaller-iphone-width-on-mobile {

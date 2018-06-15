@@ -23,8 +23,7 @@
 
 // display
 .display--inline-block {
-  display: inline-block;
-  vertical-align: top;
+  display: inline-block !important;
 }
 .display--block {
   display: block;
@@ -52,6 +51,12 @@
   top: 0;
   width: 3px !important; // browser bug (0px shifts other TV shows)
 }
+
+// overflow
+.overflow--hidden{
+  overflow: hidden;
+}
+
 
 // class that hides elements on mobile
 .show-on-mobile {

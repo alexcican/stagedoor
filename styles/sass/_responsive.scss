@@ -102,38 +102,36 @@
 // MOBILE
 @media all and (max-width: 850px) {
   .container {
-    padding: 0 5%;
+    padding: 0 6%;
   }
 
   h1 {
-    font-size: 1.8em;
-    // text-align: center;
+    font-size: 2.5em;
   }
-  // h2 {
-    // text-align: center;
-  // }
   h2,
   .text--h2,
   h3 {
-    font-size: 1.3em;
-
+    font-size: 1.5em;
     small {
       font-size: .6em;
     }
   }
   .h1--giga {
-    font-size: 3em;
+    font-size: 2.5em;
   }
   .h2--giga {
-    font-size: 2em;
+    font-size: 2.5em;
   }
   .text--bigger {
     line-height: 1.4;
   }
-
+  small {
+    font-size: 1em;
+  }
+  .container,
   .container.padding--top-six-spaces,
   .container.padding--top-four-spaces {
-    padding-top: $space / 2;
+    padding-top: $space;
   }
 
   // full width containers (one under other)
@@ -146,6 +144,13 @@
   .download-button {
     margin-left: auto;
     margin-right: auto;
+  }
+  .button.button--claim, .button.button--download {
+    width: 85%;
+  }
+  section .button {
+    font-weight: 600;
+    font-size: 1.4em;
   }
 
   .hide-on-mobile {
@@ -172,7 +177,8 @@
   nav {
     right: auto;
     left: $space / 2;
-    top: $space * 4;
+    top: $space * 2;
+    position: absolute;
 
     a {
       padding: $space / 3.5;
@@ -180,10 +186,12 @@
     }
 
     &.homepage--navigation {
-      right: 0;
-      left: 0;
-      text-align: center;
-      top: $space * 4.5;
+      right: $space;
+      top: $space;
+    }
+
+    .button {
+      padding: $space / 3;
     }
   }
   nav.podcast{
@@ -192,18 +200,25 @@
 
   // move text below navigation
   .float--left.width--40 {
-    margin-top: $space * 4;
+    margin-top: $space / 2;
   }
 
   // less spacing between elements
-  .margin--top-four-spaces{
+  .margin--top-three-spaces,
+  .margin--top-four-spaces {
     margin-top: $space;
   }
   .margin--top-six-spaces {
     margin-top: $space * 3;
   }
+  .margin--top-eight-spaces {
+    margin-top: $space * 3;
+  }
   .padding--left-one-space {
     padding-left: $space / 2;
+  }
+  .padding--top-two-spaces {
+    padding-top: $space;
   }
   .features-icons {
     padding-bottom: $space * 3.5;
@@ -226,7 +241,7 @@
     margin: 0 auto $space;
   }
   .button--download {
-    margin: 0 auto;
+    // margin: 0 auto;
   }
 
   .iphone-screenshot {
@@ -236,6 +251,10 @@
 
   td, th {
     padding: $space / 4 $space / 8;
+  }
+
+  .text--center {
+    text-align: left !important;
   }
 }
 
@@ -259,8 +278,8 @@
   }
 
   .padding--top-bottom-six-spaces {
-    padding-top: $space * 3;
-    padding-bottom: $space * 2;
+    padding-top: $space;
+    padding-bottom: $space;
   }
 
   // investor images
@@ -270,21 +289,17 @@
 
   // thicker fonts for mobile
   h1,
-  h1 strong,
+  h1 strong {
+    font-weight: 600;
+  }
   h2,
   .text--h2,
   h3 {
-    font-weight: 500;
-  }
-  .h1--giga {
-    font-size: 3.5em;
-  }
-  .h2--giga {
-    font-size: 1.5em;
+    font-weight: 600;
   }
 
   .text--bigger {
-    line-height: 1.6;
+    line-height: 1.5;
   }
 
   // position iphone correctly for investor page
@@ -335,14 +350,13 @@
 
   // smaller width for screenshot
   .iphone-screenshot {
-    width: 60%;
-    // margin-left: -$space / 2;
+    width: 80%;
 
     // video positioning
     .iphone-screenshot__inside--video {
-      width: 176px;
+      width: 230px;
       left: 14px;
-      bottom: -235px !important;
+      bottom: -180px !important;
     }
   }
 

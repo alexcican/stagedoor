@@ -4,7 +4,19 @@
         "details": [
             {
                 "appID": "YXKNDR7LNW.com.stagedoorapp.Stagedoor",
-                "paths": [ "*" ]
+                "paths": [
+                    "NOT /404",
+                    "NOT /about",
+                    "NOT /access",
+                    "NOT /invest",
+                    "NOT /open",
+                    "NOT /partners",
+                    "NOT /podcast",
+                    "NOT /privacy",
+                    "NOT /promo",
+                    "NOT /sitemap.xml"
+                    "/*"
+                 ]
             }
         ]
     }

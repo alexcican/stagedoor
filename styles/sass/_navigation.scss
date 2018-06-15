@@ -1,16 +1,26 @@
+// nav {
+//   position: absolute;
+//   right: 0;
+//   top: $space * 3;
+
+//   a {
+//     padding: $space / 4;
+//     margin-left: $space / 2;
+//   }
+
+//   .current {
+//     cursor: default;
+//     color: $dark-grey;
+//     text-decoration: none !important;
+//   }
+// }
+
 nav {
-  position: absolute;
-  right: 0;
-  top: $space * 3;
+  text-align: right;
+  padding-bottom: $space * 3;
 
   a {
     padding: $space / 4;
-    margin-left: $space / 2;
-  }
-
-  .current {
-    cursor: default;
-    color: $dark-grey;
-    text-decoration: none !important;
+    margin-left: $space;
   }
 }
