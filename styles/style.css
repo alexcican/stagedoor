@@ -1827,6 +1827,9 @@ nav a {
   padding: 5px;
   margin-left: 20px;
 }
+nav .button--download {
+  width: auto !important;
+}
 
 .columns--4 > * {
   width: 23.625%;

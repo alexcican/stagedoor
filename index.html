@@ -133,11 +133,11 @@
       <a href="https://stagedoorapp.com/podcast" title="Ad Lib Podcast">Podcast</a>
       <a href="https://medium.com/@stagedoor" rel="nofollow" target="_blank" title="Blog">Blog</a>
       <a href="https://stagedoorapp.com/partners" title="Become a partner" class="hide-on-mobile">Claim page</a>
-      <a href="https://itunes.apple.com/us/app/stagedoor-london-theatre-app/id963068912?ls=1&mt=8" id="appstore-link" title="Download iOS app" class="button  display--inline-block">Download <span class="hide-on-mobile"> app</span></a>
+      <a href="https://itunes.apple.com/us/app/stagedoor-london-theatre-app/id963068912?ls=1&mt=8" title="Download iOS app" class="button  button--download  display--inline-block">Download <span class="hide-on-mobile"> app</span></a>
     </nav>
 
     <section class="max-width--1200  horizontal--center  padding--bottom-one-space  show-on-mobile  text--center">
-      <a href="https://itunes.apple.com/us/app/stagedoor-london-theatre-app/id963068912?ls=1&mt=8" id="appstore-link" title="Download iOS app"><img src="images/logo.svg" alt="apple icon stagedoor theatre" class="appicon  vertical-align--middle" /></a><h2 class="display--inline-block  vertical-align--middle  padding--left-one-space">Stagedoor</h2>
+      <a href="https://itunes.apple.com/us/app/stagedoor-london-theatre-app/id963068912?ls=1&mt=8" title="Download iOS app"><img src="images/logo.svg" alt="apple icon stagedoor theatre" class="appicon  vertical-align--middle" /></a><h2 class="display--inline-block  vertical-align--middle  padding--left-one-space">Stagedoor</h2>
     </section>
 
     <section class="max-width--1200  horizontal--center  cf">
@@ -150,13 +150,13 @@
 
       <div class="float--right  width--60  margin--top-three-spaces  text">
         <header class="padding--bottom-one-space  hide-on-mobile">
-          <a href="https://itunes.apple.com/us/app/stagedoor-london-theatre-app/id963068912?ls=1&mt=8" id="appstore-link" title="Download iOS app"><img src="images/logo.svg" alt="apple icon stagedoor theatre" width="92" class="block--inline  vertical-align--middle" /></a>
+          <a href="https://itunes.apple.com/us/app/stagedoor-london-theatre-app/id963068912?ls=1&mt=8" title="Download iOS app"><img src="images/logo.svg" alt="apple icon stagedoor theatre" width="92" class="block--inline  vertical-align--middle" /></a>
           <h2 class="block--inline  padding--left-one-space  vertical-align--middle  h2--giga">Stagedoor</h2>
         </header>
         <h1 class="padding--top-two-spaces">All of London’s theatre at your fingertips.</h1>
         <h2 class="padding--top-one-space">Discover brilliant theatre with London’s most comprehensive guide. Thousands of audience and critic reviews. Personalised recommendations. Seamless booking.</h2>
         <p class="text--bigger  padding--top-two-spaces">
-          <a href="https://itunes.apple.com/us/app/stagedoor-london-theatre-app/id963068912?ls=1&mt=8" id="appstore-link" class="button  button--download  no-link-colour" title="Download now for iOS">Download for iPhone</a>
+          <a href="https://itunes.apple.com/us/app/stagedoor-london-theatre-app/id963068912?ls=1&mt=8" class="button  button--download  no-link-colour" title="Download now for iOS">Download for iPhone</a>
         </p>
         <small class="opacity--50">Android coming soon! <a href="https://stagedoorapp.us13.list-manage.com/subscribe?u=bbea3bc889240db83089d1bf2&id=1c259e8480" target="_blank" rel="nofollow">Get notified when it’s out!</a></small>
       </div>
@@ -218,7 +218,7 @@
     <section class="max-width--1200  horizontal--center  text--center  padding--top-bottom-six-spaces">
       <h2><strong>London&rsquo;s most comprehensive theatre guide</strong>, <span class="display--block  hide-on-mobile"></span>tailor-made for you.</h2>
       <p class="text--bigger  margin--top-one-space">
-        <a href="https://itunes.apple.com/us/app/stagedoor-london-theatre-app/id963068912?ls=1&mt=8" id="appstore-link" class="button  button--download  display--inline-block  no-link-colour" title="Download now for iOS">Get Stagedoor for free!</a>
+        <a href="https://itunes.apple.com/us/app/stagedoor-london-theatre-app/id963068912?ls=1&mt=8" class="button  button--download  display--inline-block  no-link-colour" title="Download now for iOS">Get Stagedoor for free!</a>
         <small class="padding--top-half-space  opacity--50">Android coming soon! <a href="https://stagedoorapp.us13.list-manage.com/subscribe?u=bbea3bc889240db83089d1bf2&id=1c259e8480" target="_blank" rel="nofollow">Get notified when it’s out!</a></small>
       </p>
     </section>
@@ -250,7 +250,7 @@
   <script>
     // detect if iPhone/iPad replace iTunes link with direct App Store link
     if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
-      document.getElementById('appstore-link').href="itms://itunes.apple.com/gb/app/stagedoor-london-theatre-app/id963068912"
+      document.getElementsByClassName('button--download').href="itms://itunes.apple.com/gb/app/stagedoor-london-theatre-app/id963068912"
     } else {
       $('.invest-app-screenshot').append('<img src="images/discover-new.jpg" alt="discover screenshot" />');
       $('.has-overflow-on-desktop--js').addClass('overflow--hidden').children().addClass('has-top-bottom-fade');
