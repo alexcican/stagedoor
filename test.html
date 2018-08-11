@@ -8,6 +8,7 @@
 <body>
    <div>
       <a href="https://alexcican.com/stagedoor/test?v=4&amp;fromBtnOpenApp=true">Test me (has solution)</a><br/>
+      <a href="" class="open_in_app">Open in App</a>
    </div>
 
 
@@ -37,7 +38,9 @@
     if (notiOS === false) {
       var url = window.location.href;
       // add the Open in App button
-      $('body').append('<a href="' + url + '&amp;fromBtnOpenApp=true" id="open-in-app">Open in App</a>');
+      // $('body').append('<a href="' + url + '&amp;fromBtnOpenApp=true" class="open-in-app">Open in App</a>');
+      var urlNew = url + '&amp;fromBtnOpenApp=true';
+      $('.open_in_app').attr("href", urlNew);
       // check if tapped
       var fromBtnOpenApp = getParameterByName('fromBtnOpenApp', url);
       if (fromBtnOpenApp === "true") {
