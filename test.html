@@ -8,14 +8,17 @@
 <body>
    <div>
       <a href="https://alexcican.com/stagedoor/test?v=4&amp;fromBtnOpenApp=true">Test me (has solution)</a><br/>
-      <a href="https://alexcican.com/stagedoor/test?fromBtnOpenApp=true&amp;v=4">Test me (has altered solution)</a><br/>
-      <a href="https://alexcican.com/stagedoor/test?v=4">Test me</a>
    </div>
+
+
+   <script
+     src="https://code.jquery.com/jquery-3.3.1.slim.js"
+     integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+     crossorigin="anonymous"></script>
 
    <script>
     // split URL
     function getParameterByName(name, url) {
-      if (!url) url = window.location.href;
       name = name.replace(/[\[\]]/g, "\\$&");
       var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
           results = regex.exec(url);
@@ -32,11 +35,15 @@
 
     // if on iOS device check to see if user has the app or not
     if (notiOS === false) {
-       var fromBtnOpenApp = getParameterByName('fromBtnOpenApp');
-       if (fromBtnOpenApp === "true") {
-         // if parameter exists means page was reloaded = user doesn't have the app. Show App Store alert
-         window.location = "https://itunes.apple.com/us/app/stagedoor-london-theatre-app/id963068912?ls=1&mt=8";
-       }
+      var url = window.location.href;
+      // add the Open in App button
+      $('body').append('<a href="' + url + '&amp;fromBtnOpenApp=true" id="open-in-app">Open in App</a>');
+      // check if tapped
+      var fromBtnOpenApp = getParameterByName('fromBtnOpenApp', url);
+      if (fromBtnOpenApp === "true") {
+        // if parameter exists means page was reloaded = user doesn't have the app. Show App Store alert
+        window.location = "https://itunes.apple.com/gb/app/stagedoor-london-theatre-app/id963068912?ls=1&mt=8";
+      }
     }
    </script>
 </body>
